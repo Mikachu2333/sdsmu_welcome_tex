@@ -4,19 +4,21 @@
 \usepackage{ulem}
 \usepackage{float}
 \usepackage{graphicx}
-%\usepackage{multirow}
-%\usepackage{booktabs}
-\usepackage{setspace}
+%\usepackage{setspace}
 \usepackage[final=true,hidelinks,bookmarks,bookmarksnumbered=true]{hyperref}
 
 \setmainfont[BoldFont=Dream Han Sans CN W22]{Dream Han Sans CN W12}
 \setCJKmainfont{Dream Han Serif CN W7}[BoldFont=Dream Han Serif CN W20]
 \setCJKsansfont{Dream Han Sans CN W12}[BoldFont=Dream Han Sans CN W22]
-%\flushbottom
-\linespread{1.2}
-\setlength{\parskip}{1em}
+
+%\titlespacing{\section}{0pt}{2.5ex plus 1ex minus .2ex}{1.3ex plus .2ex}
+%\setlength{\parskip}{1em}
 
 \begin{document}
+
+\titlespacing*{\chapter}{0pt}{0px}{5px plus 4pt minus 4pt}
+\titlespacing*{\section}{0pt}{.5ex plus 4pt minus 4pt}{.4em plus 4pt minus 4pt}
+\titlespacing*{\subsection}{0pt}{.5ex plus 4pt minus 4pt}{.4em plus 4pt minus 4pt}
 
 \title{潍坊医学院新生入学指南（浮烟山校区）}
 \author{Mika\thanks{Mailto: xkjz.mddb@yandex.com}\and 浮烟山小麻花 \and vv\and 花海\and 潍坊医学院新媒体联盟\and 潍坊医学院表白墙QQ频道\thanks{第7版，由\LaTeXe 与\LaTeX 制作与排版}}
@@ -28,6 +30,7 @@
 \include{chapter1}
 \include{chapter2}
 \include{chapter3}
+\include{chapter4}
 
 
 \end{document}
