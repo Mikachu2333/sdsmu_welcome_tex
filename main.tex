@@ -5,7 +5,6 @@
 \usepackage{ulem}
 \usepackage{float}
 \usepackage{graphicx}
-%\usepackage{setspace}
 \usepackage[final=true,hidelinks,bookmarks,bookmarksnumbered=true]{hyperref}
 
 \setmainfont[BoldFont=Dream Han Sans CN W22]{Dream Han Sans CN W12}
@@ -29,11 +28,12 @@
 \tableofcontents
 \newpage
 
-\include{chapter1}
-\include{chapter2}
-\include{chapter3}
-\include{chapter4}
-\include{chapter5}
+\setlength{\parskip}{1em plus 5pt minus 5pt}
+\input{chapter1.tex}
+\input{chapter2.tex}
+\input{chapter3.tex}
+%\input{chapter4.tex}
+\input{chapter5.tex}
 
 
 \end{document}
