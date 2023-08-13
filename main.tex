@@ -1,6 +1,7 @@
 \documentclass[a4paper,twoside,onecolumn,12pt]{ctexrep}
 \usepackage[a4paper,top = 1.8cm,bottom = 2cm,hmargin=1.5cm]{geometry}
 \usepackage{titlesec}
+\usepackage{indentfirst}
 \usepackage{ulem}
 \usepackage{float}
 \usepackage{graphicx}
@@ -11,8 +12,7 @@
 \setCJKmainfont{Dream Han Serif CN W7}[BoldFont=Dream Han Serif CN W20]
 \setCJKsansfont{Dream Han Sans CN W12}[BoldFont=Dream Han Sans CN W22]
 
-%\titlespacing{\section}{0pt}{2.5ex plus 1ex minus .2ex}{1.3ex plus .2ex}
-%\setlength{\parskip}{1em}
+\setlength{\parindent}{2em}
 
 \begin{document}
 
@@ -25,7 +25,9 @@
 \date{\today}
 \maketitle
 
+\newpage
 \tableofcontents
+\newpage
 
 \include{chapter1}
 \include{chapter2}
