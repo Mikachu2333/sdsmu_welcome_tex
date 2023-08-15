@@ -2,7 +2,9 @@
 ---
 
 # 下载
-请前往发行版本进行下载（暂无）
+- 请前往发行版本下载
+
+- 或者点击[此处](https://gitee.com/mikazo/latex_version/releases/latest/) 下载
 
 # 编写说明
 ## 目的
