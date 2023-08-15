@@ -31,6 +31,8 @@
 
 - 请使用 VsCode 的 [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) 扩展进行自动格式化，“衣食住玩与生活”章节的表格部分除外
 
+- 请注意，因为多个 `\footnotemark` 在 `enumerate` 环境下的同一 `\item` 下多次使用将导致最后一个 `\footnotetext{}` 之前的所有 `\footnotetext{}` 都无法正确生成脚注序号，因此部分 `\footnotetext{}` 采用了 `\footnotetext[序号]{}` 的形式手动指定了部分序号，如需修改本文档，请在编译后仔细检查脚注序号是否有误。例如：第7章的“班级综测”部分，第9章的“美食与生活”部分，第11章“浴室预约与使用”部分。
+
 - 若无法完美排版并修正警告，则不要理会“校级社团汇总”表格的 `Overfull` 警告
 
 - 所有链接使用 `\uline\(h)ref{链接}` 排版
