@@ -33,7 +33,7 @@
 
 - 请使用 `\footnotemark` 与配套的 `\footnotetext[]{}` 来代替传统的 `\footnote{}` 以保证排版
 
-- 请注意，因为多个 `\footnotemark` 在同一 `\item` 下多次使用将导致最后一个 `\footnotetext{}` 之前的所有 `\footnotetext{}` 都无法正确生成脚注序号，因此部分 `\footnotetext{}` 采用了 `\footnotetext[序号]{}` 的形式手动指定了部分序号，如需修改本文档，请在编译后仔细检查脚注序号是否有误。例如：“衣食住玩与生活”章的“美食与生活”部分。
+- 请注意，因为多个 `\footnotemark` 在同一 `\item` 下多次使用将导致最后一个 `\footnotetext{}` 之前的所有 `\footnotetext{}` 都无法正确生成脚注序号，因此需要使用 `\newcommand` 定义新命令，以达到相对优雅的效果。例如：“衣食住玩与生活”章的“美食与生活”部分。
 
 - 若无法完美排版并修正警告，则不要理会“校级社团汇总”表格的 `Overfull` 警告
 
