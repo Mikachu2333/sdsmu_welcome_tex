@@ -4,7 +4,7 @@
 # 下载
 - 请前往发行版本下载
 
-- 或者点击 [此处](https://gitee.com/mikazo/latex_version/releases/latest/) 下载
+- **点击 [此处](https://workdrive.zohoexternal.com/folder/sx5ijbbd2ad4d669c4c358d59fe314410aaf4) 下载**
 
 # 编写说明
 ## 目的
