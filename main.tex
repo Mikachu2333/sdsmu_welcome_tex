@@ -1,0 +1,62 @@
+\documentclass[a4paper,twoside,onecolumn,12pt]{ctexrep}
+\usepackage{bxtexlogo}
+\usepackage{fancyhdr,titlesec}
+\usepackage{indentfirst,ulem}
+\usepackage{float,graphicx}
+\usepackage{multirow,booktabs,makecell,amssymb,array}
+\usepackage[a4paper,top = 1.8cm,bottom = 1.0cm,hmargin=1.5cm]{geometry}
+\usepackage[final=true,hidelinks,bookmarks,bookmarksnumbered=true]{hyperref}
+\usepackage{datetime2}
+
+\bxtexlogoimport{+TeX}
+\bxtexlogoimport{+LaTeX}
+\bxtexlogoimport{XeLaTeX}
+\bxtexlogoimport{LaTeXe}
+
+\setmainfont[BoldFont=Dream Han Sans CN W22]{Dream Han Sans CN W12}
+\setCJKmainfont{Dream Han Serif CN W7}[BoldFont=Dream Han Serif CN W20]
+\setCJKsansfont{Dream Han Sans CN W12}[BoldFont=Dream Han Sans CN W22]
+
+\setlength{\parindent}{1.2em}
+\setlength{\headheight}{0pt}
+\setlength{\topmargin}{-6em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\begin{document}
+
+\titlespacing*{\chapter}{0pt}{3px}{5px plus 4pt minus 4pt}
+\titlespacing*{\section}{0pt}{.5ex plus 4pt minus 4pt}{.4em plus 4pt minus 4pt}
+\titlespacing*{\subsection}{0pt}{.5ex plus 4pt minus 4pt}{.4em plus 4pt minus 4pt}
+
+\title{潍坊医学院新生入学指南（浮烟山校区）}
+\author{Mika\thanks{\uline{\href{Mailto:xkjz.mddb@yandex.com}{Mailto: xkjz.mddb@yandex.com}}}\and 潍坊医学院表白墙QQ频道\thanks{第1.0.9版，由\LaTeX 的\LaTeXe 版本生成}}
+\date{\DTMnow}
+\maketitle
+
+\setlength{\parskip}{1em plus 5pt minus 5pt}
+
+\tableofcontents
+\newpage
+
+\input{document_introduction.tex}
+\input{school_map.tex}
+\input{school_readiness.tex}
+\input{school_register.tex}
+\input{dormitory.tex}
+\input{military_training.tex}
+\input{study.tex}
+\input{security.tex}
+\input{school_life.tex}
+\input{cost.tex}
+\input{common_tutorials.tex}
+\input{QQgroup_fellow_townsman.tex}
+\input{community_summary.tex}
+\input{common_websites_apps.tex}
+
+\end{document}
