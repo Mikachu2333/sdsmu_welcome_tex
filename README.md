@@ -2,9 +2,11 @@
 ---
 
 # 下载
-- 请前往发行版本下载
+- **在[腾讯文档](https://docs.qq.com/s/ETcQ-ZFSrSsh6MK9bm773q)中在线查看与下载**（推荐）
 
-- **点击 [此处](https://workdrive.zohoexternal.com/folder/sx5ijbbd2ad4d669c4c358d59fe314410aaf4) 下载**
+注意：需要Google、Firefox、Edge等现代浏览器，IE11等无法正常显示。
+
+- 在Gitee仓库的“发行版”下载
 
 # 编写说明
 ## 目的
