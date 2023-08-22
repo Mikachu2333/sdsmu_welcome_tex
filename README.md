@@ -16,7 +16,7 @@
 本文章无水印和其他冗余信息（如校园卡的详情流量与优惠政策等），如需更优秀的排版与相关信息请下载《潍医新生开学指南》。
 
 ## 编写语言
-本指南采用Latex语言编写而成，使用Xelatex编译为pdf发布。
+本指南采用LaTeX语言编写而成，使用XeLaTeX编译为pdf发布。
 
 # 维护说明
 ## 内容增减
@@ -33,7 +33,7 @@
 
 - 请使用 VsCode 的 [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) 扩展进行自动格式化，若表格类排版格式化后难以理解请适当使用 `%` 进行断行
 
-- 请使用 `\footnotemark` 与配套的 `\footnotetext[]{}` 来代替传统的 `\footnote{}` 以保证排版
+- 请使用 `\footnotemark` 与配套的 `\footnotetext[]{}` 来代替传统的 `\footnote{}` 以保证排版优雅
 
 - 请注意，因为多个 `\footnotemark` 在同一 `\item` 下多次使用将导致最后一个 `\footnotetext{}` 之前的所有 `\footnotetext{}` 都无法正确生成脚注序号，因此需要使用 `\newcommand` 定义新命令，以达到相对优雅的效果。例如：“衣食住玩与生活”章的“美食与生活”部分。
 
