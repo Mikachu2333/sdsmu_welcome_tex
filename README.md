@@ -29,7 +29,9 @@
 - 如有侵权，请按文章中的Mailto地址联系作者删除
 
 ## 格式改进
-- 如无必要，不要引入更多的package（排版无需进一步改进）
+- 如无必要，不要引入更多的package
+
+（排版无需进一步改进，也改进不了，如果你确实有能力，可以试试把三级 `enumerate` 格式改为①②这种样式……我已经放弃了反正）
 
 - 请使用 VsCode 的 [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) 扩展进行自动格式化，若表格类排版格式化后难以理解请适当使用 `%` 进行断行
 
@@ -44,6 +46,8 @@
 - 特殊强调事项使用 `\textbf{\uuline{强调}}` 排版，因 `\uuline{}` 无法自动换行，如因句子长度超限需要换行，请编译后手动调整为如下格式 `\textbf{\uuline{强调内容}\\\uuline{换行后强调内容}}`
 
 - 如需对链接进行强调，请使用 `\textbf{\uline{\(h)ref{强调链接}}}` 排版
+
+- 二级 `enumerate` 使用 `[（1）]` 排版，三级 `enumerate` 使用 `[〔1〕]` 排版
 
 ## 编译
 - 各文件需使用LF标记进行结尾，而不是CRLF，具体说明与设置办法参考网络教程
