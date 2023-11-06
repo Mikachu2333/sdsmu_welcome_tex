@@ -6,7 +6,7 @@
 \usepackage{indentfirst,ulem}
 \usepackage{float,graphicx}
 \usepackage{multirow,booktabs,makecell,amssymb,array}
-\usepackage{enumerate}
+\usepackage{enumitem}
 \usepackage[a4paper,top = 1.8cm,bottom = 1.0cm,hmargin=1.5cm]{geometry}
 \usepackage[final=true,hidelinks,bookmarks,bookmarksnumbered=true]{hyperref}
 \usepackage{datetime2}
@@ -34,6 +34,10 @@
 \renewcommand{\footrulewidth}{0pt}
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
+\setlist[enumerate,1]{label=\arabic*.,ref=\arabic*.}
+\setlist[enumerate,2]{label=(\arabic*),ref=(\arabic*)}
+\setlist[enumerate,3]{label=\fbox{\arabic*},ref=\fbox{\arabic*}}
+\setlist[enumerate]{itemsep=0pt}
 
 
 \begin{document}
@@ -42,13 +46,15 @@
 \titlespacing*{\section}{0pt}{.5ex plus 4pt minus 4pt}{.4em plus 4pt minus 4pt}
 \titlespacing*{\subsection}{0pt}{.5ex plus 4pt minus 4pt}{.4em plus 4pt minus 4pt}
 
+
+
 \title{\Huge{\textbf{潍坊医学院入学与生活指南}\\\large{浮烟山校区专用}}}
 \bigbreak
-\author{LinkChou\thanks{第1.2.0版，由\textit{\LaTeX} 的\textit{\LaTeXe} 版本生成。\uline{\href{Mailto:xkjz.mddb@yandex.com}{Mailto: LinkChou@yandex.com}}}\and 潍坊医学院表白墙QQ频道}
+\author{LinkChou\thanks{第1.2.1版，由\textit{\LaTeX} 的\textit{\LaTeXe} 版本生成。\uline{\href{Mailto:xkjz.mddb@yandex.com}{Mailto: LinkChou@yandex.com}}}\and 潍坊医学院表白墙QQ频道}
 \date{\DTMnow}
 \maketitle
 
-\setlength{\parskip}{1em plus 5pt minus 5pt}
+\setlength{\parskip}{0.8em minus 5pt}
 \renewcommand{\thefootnote}{\arabic{footnote}}
 
 \tableofcontents
