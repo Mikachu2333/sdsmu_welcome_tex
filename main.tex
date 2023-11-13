@@ -1,7 +1,8 @@
-%潍坊医学院入学与生活指南 © 2023 by LinkChou is licensed under CC BY-SA 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/
-
 % !TeX encoding = UTF-8
 
+% 山二医入学与生活指南 © 2023 by LinkChou is licensed under CC BY-SA 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/
+
+% 导入所需的package
 \documentclass[a4paper,twoside,onecolumn,12pt]{ctexrep}
 \usepackage{bxtexlogo}
 \usepackage{fancyhdr,titlesec}
@@ -14,48 +15,56 @@
 \usepackage{datetime2}
 
 
-
+% 重定义部分符号以免错误以及形式不统一
 \bxtexlogoimport{+TeX}
 \bxtexlogoimport{+LaTeX}
 \bxtexlogoimport{XeLaTeX}
 \bxtexlogoimport{LaTeXe}
 
+% 重定义文章字体
 \setmainfont[BoldFont=Dream Han Sans CN W22]{Dream Han Sans CN W12}
 \setCJKmainfont{Dream Han Serif CN W7}[BoldFont=Dream Han Serif CN W20]
 \setCJKsansfont{Dream Han Sans CN W12}[BoldFont=Dream Han Sans CN W22]
 
+% 行间距以及部分页边距设定
 \setlength{\parindent}{1em}
 \setlength{\headheight}{0pt}
 \setlength{\topmargin}{-6em}
 
+% 页眉页脚
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot[C]{\thepage}
 
+% 脚注格式重定义
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
+% 列表样式重定义
 \setlist[enumerate,1]{label=\arabic*.,ref=\arabic*.}
 \setlist[enumerate,2]{label=(\arabic*),ref=(\arabic*)}
-\setlist[enumerate,3]{label=\fbox{\arabic*},ref=\fbox{\arabic*}}
+\setlist[enumerate,3]{label=[\arabic*],ref=[\arabic*]}
+\setlist[enumerate,4]{label=〔\arabic*〕,ref=〔\arabic*〕}
 \setlist[enumerate]{itemsep=0pt}
 
-
+% 开始正文
 \begin{document}
 
+% 标题间距重定义
 \titlespacing*{\chapter}{0pt}{3px}{5px plus 4pt minus 4pt}
 \titlespacing*{\section}{0pt}{.5ex plus 4pt minus 4pt}{.4em plus 4pt minus 4pt}
 \titlespacing*{\subsection}{0pt}{.5ex plus 4pt minus 4pt}{.4em plus 4pt minus 4pt}
 
 
-
+% 题目
 \title{\Huge{\textbf{山二医入学与生活指南}\\\normalsize{（又称：三二一指北）}\\\large{浮烟山校区专用}}}
 \bigbreak
 \author{LinkChou\thanks{第1.2.3版，由\textit{\LaTeXe}编译生成，遵循CC BY-SA 4.0协议。\uline{\href{Mailto:LinkChou@yandex.com}{Mailto: LinkChou@yandex.com}}}\and 山东第二医科大学表白墙QQ频道}
 \date{\DTMnow}
 \maketitle
 
+% 段落间距与脚注样式重设定
 \setlength{\parskip}{0.8em minus 5pt}
 \renewcommand{\thefootnote}{\arabic{footnote}}
 
