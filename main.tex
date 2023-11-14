@@ -4,7 +4,7 @@
 
 % 导入所需的package
 \documentclass[a4paper,twoside,onecolumn,12pt]{ctexrep}
-\usepackage{bxtexlogo}
+\usepackage{bxtexlogo,eso-pic}
 \usepackage{fancyhdr,titlesec}
 \usepackage{indentfirst,ulem}
 \usepackage{float,graphicx}
@@ -48,6 +48,16 @@
 \setlist[enumerate,4]{label=〔\arabic*〕,ref=〔\arabic*〕}
 \setlist[enumerate]{itemsep=0pt}
 
+% 设置背景页校徽
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{background.pdf}%
+\vfill
+}}}
+
 % 开始正文
 \begin{document}
 
@@ -56,11 +66,13 @@
 \titlespacing*{\section}{0pt}{.5ex plus 4pt minus 4pt}{.4em plus 4pt minus 4pt}
 \titlespacing*{\subsection}{0pt}{.5ex plus 4pt minus 4pt}{.4em plus 4pt minus 4pt}
 
+% 添加标题校徽背景图
+\AddToShipoutPicture*{\BackgroundPic}
 
 % 题目
 \title{\Huge{\textbf{山二医入学与生活指南}\\\normalsize{（又称：三二一指北）}\\\large{浮烟山校区专用}}}
 \bigbreak
-\author{LinkChou\thanks{第1.2.3版，由\textit{\LaTeXe}编译生成，遵循CC BY-SA 4.0协议。\uline{\href{Mailto:LinkChou@yandex.com}{Mailto: LinkChou@yandex.com}}}\and 山东第二医科大学表白墙QQ频道}
+\author{LinkChou\thanks{第2.2.3版，由\textit{\LaTeXe}编译生成，遵循CC BY-SA 4.0协议。\uline{\href{Mailto:LinkChou@yandex.com}{Mailto: LinkChou@yandex.com}}}\and 山二医校园频道}
 \date{\DTMnow}
 \maketitle
 
