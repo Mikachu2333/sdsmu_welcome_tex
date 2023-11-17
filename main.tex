@@ -33,7 +33,7 @@
 \fancyhf{}
 \fancyfoot[C]{\thepage}
 
-% 脚注格式重定义
+% 脚注与页面格式重定义
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
@@ -42,7 +42,7 @@
 \setlist[enumerate,1]{label=\arabic*.}
 \setlist[enumerate,2]{label=(\arabic*)}
 \setlist[enumerate,3]{label=[\arabic*]}
-\setlist[enumerate,4]{label=\{\arabic*\}}
+%\setlist[enumerate,4]{label=\{\arabic*\}}
 \setlist[enumerate]{itemsep=0pt}
 
 % 设置背景页校徽
@@ -54,6 +54,7 @@
 \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{background.pdf}%
 \vfill
 }}}
+
 
 % 开始正文
 \begin{document}
@@ -69,7 +70,7 @@
 % 题目
 \title{\Huge{\textbf{山二医入学与生活指南}\\\normalsize{（简称：三二一新指南）}\\\large{浮烟山校区专用}}}
 \bigbreak
-\author{LinkChou\thanks{第2.2.3版，由\textit{\LaTeXe}编译生成，遵循CC BY-SA 4.0协议。\uline{\href{Mailto:LinkChou@yandex.com}{Mailto: LinkChou@yandex.com}}}\and 山二医校园频道\and\normalsize{特别感谢：临床医学院党委、临床医学院学工办、新媒体联盟}}
+\author{LinkChou\thanks{第2.2.3版，由\textit{\LaTeXe}编译生成，遵循CC BY-SA 4.0协议。\uline{\href{Mailto:LinkChou@yandex.com}{Mailto: LinkChou@yandex.com}}}\and 山二医校园频道}
 \date{\DTMnow}
 \maketitle
 
