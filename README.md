@@ -40,13 +40,13 @@
 
 - 如无必要，不要引入更多的package
 
-（排版无需进一步改进，也改进不了，如果你确实有能力，可以试试改进 `Underfull` 与 `Overfull` 提示……）
+（排版无需进一步改进，也改进不了……）
 
 - 请使用 VsCode 的 [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) 扩展进行自动格式化，若表格类排版格式化后难以理解请适当使用 `%` 进行断行
 
 - 请使用 `\footnotemark` 与配套的 `\footnotetext{}` 来代替传统的 `\footnote{}` 以保证排版优雅
 
-- 若无法在完美排版的同时修正警告，则不要理会 `Overfull` 与 `Underfull` 警告
+- 若出现 `Overfull` 或 `Underfull` 警告，请联合使用浮动体与 `\setlength{\leftskip}{0pt plus 1fil minus \marginparwidth}` 和 `\setlength{\rightskip}{\leftskip}` 进行修正，必要时换用 `adjustbox` 宏包
 
 - 所有链接使用 `\uline\(h)ref{链接}` 排版
 

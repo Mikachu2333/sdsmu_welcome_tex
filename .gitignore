@@ -1,4 +1,6 @@
 *.aux
+*.bbl
+*.dvi
 *.lof
 *.log
 *.lot
