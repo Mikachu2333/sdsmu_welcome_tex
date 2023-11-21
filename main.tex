@@ -14,6 +14,21 @@
 \usepackage[final=true,colorlinks,hidelinks,bookmarks,bookmarksnumbered=true]{hyperref}
 \usepackage{datetime2}
 
+% 重设定chapter间距
+\ctexset{
+    chapter={
+        beforeskip=1ex,
+        afterskip=2ex
+    },
+    section={
+        beforeskip=1ex,
+        afterskip=.6ex
+    },
+    subsection={
+        beforeskip=0pt,
+        afterskip=.4ex
+    }
+}
 
 % 重定义部分符号以免错误
 \bxtexlogoimport{XeLaTeX}
@@ -55,14 +70,8 @@
 \vfill
 }}}
 
-
 % 开始正文
 \begin{document}
-
-% 标题间距重定义
-\titlespacing*{\chapter}{0pt}{3px}{5px plus 4pt minus 4pt}
-\titlespacing*{\section}{0pt}{.5ex plus 4pt minus 4pt}{.4em plus 4pt minus 4pt}
-\titlespacing*{\subsection}{0pt}{.5ex plus 4pt minus 4pt}{.4em plus 4pt minus 4pt}
 
 % 添加标题校徽背景图
 \AddToShipoutPicture*{\BackgroundPic}
