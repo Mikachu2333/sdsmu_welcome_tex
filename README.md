@@ -12,11 +12,15 @@
 
 ## 编写说明
 
+## 许可证
+
+CC BY-SA 4.0
+
 ### 目的
 
-本指南旨在让更多新生对入学有一个初步的计划并帮助新生查漏补缺、提前了解学校情况。
+本指南旨在建立起新生对学校的初步认知，并帮助老生速查成常见问题的解决方案。
 
-### 内容
+### 版本说明
 
 本文章无水印和其他冗余信息（如校园卡的详情流量与优惠政策等），如需更优秀的排版与相关信息请下载《山二医新生开学指南》。
 
@@ -46,7 +50,9 @@
 
 - 请使用 `\footnotemark` 与配套的 `\footnotetext{}` 来代替传统的 `\footnote{}` 以保证排版优雅
 
-- 若出现 `Overfull` 或 `Underfull` 警告，请联合使用浮动体与 `\setlength{\leftskip}{0pt plus 1fil minus \marginparwidth}` 和 `\setlength{\rightskip}{\leftskip}` 进行修正，必要时换用 `adjustbox` 宏包
+- 若出现 `Overfull` 或 `Underfull` 警告，请务必进行修正，必要时使用最小工作示例（`MWE`）进行排查
+
+- 文章仅应当出现4个 `Warning` 且只与 `Font` 有关
 
 - 所有链接使用 `\uline\(h)ref{链接}` 排版
 
