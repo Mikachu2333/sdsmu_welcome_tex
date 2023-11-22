@@ -18,4 +18,5 @@
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+main_test.pdf
 main.pdf
