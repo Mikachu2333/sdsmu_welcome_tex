@@ -14,19 +14,19 @@
 \usepackage[final=true, colorlinks, hidelinks, bookmarks, bookmarksnumbered=true]{hyperref}
 \usepackage{datetime2}
 
-% 重设定chapter间距
+% 重设定间距
 \ctexset{
     chapter={
         beforeskip=0ex,
-        afterskip=.5ex
+        afterskip=4ex
     },
     section={
-        beforeskip=.5ex,
-        afterskip=.3ex
+        beforeskip=0ex,
+        afterskip=0ex
     },
     subsection={
         beforeskip=0ex,
-        afterskip=.2ex
+        afterskip=0ex
     }
 }
 
@@ -37,6 +37,7 @@
 % 重定义文章字体
 \setmainfont[BoldFont=Dream Han Serif CN W20]{Dream Han Serif CN W7}
 \setCJKmainfont{Dream Han Serif CN W7}[BoldFont=Dream Han Serif CN W20]
+\setCJKsansfont[BoldFont=Dream Han Serif CN W20]{Dream Han Serif CN W7}
 
 % 段间距与行间距重设定
 \setlength{\parskip}{.75ex plus 5pt minus 8pt}
@@ -71,28 +72,7 @@
 % 开始正文
 \begin{document}
 
-% 添加标题校徽背景图
-\AddToHookNext{shipout/background}{\BackgroundPic}
-
-% 题目
-\title{%
-\normalsize
-{\Huge\textbf{山二医入学与生活指南}}\\
-（简称：三二一新指南）\\[10pt]
-{\large\textbf{浮烟山校区专用}}\vspace*{-20pt}}
-\author{LinkChou\thanks{第249-Preview版，由\textit{\LaTeXe}编译生成，CC BY-SA 4.0协议。%
-\uline{\href{Mailto:LinkChou@yandex.com}{Mailto: LinkChou@yandex.com}}\\%
-\textbf{敬告：}%
-力薄才疏，难免疏漏，敬请绳愆纠缪。%
-具体内容均以学校官方为准，如有变更恕不另行通知。}\and 山二医校园频道}
-\date{\DTMnow}
-\maketitle
-
-% 脚注样式重设定
-\renewcommand{\thefootnote}{\arabic{footnote}}
-
-\tableofcontents
-
+\input{preface.tex}
 \input{document_introduction.tex}
 \input{school_map.tex}
 \input{school_readiness.tex}
