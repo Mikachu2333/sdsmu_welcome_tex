@@ -2,9 +2,9 @@
 
 曾用名：《潍坊医学院新生入学指南》、《潍医入学与生活指南》
 
-本指南采用TeX语言编写而成，使用XeLaTeX二次编译为pdf发布。
+1. 本指南采用 `TeX` 语言编写而成，使用 `XeLaTeX` 二次编译为 `pdf` 发布。
 
-采用 `CC BY-SA 4.0` 许可证。
+2. 采用 `CC BY-SA 4.0` 许可证。
 
 ## 下载
 
@@ -41,19 +41,19 @@
 
 - 如需新开一章，请使用该章节主要内容对其进行标明
 
-- 切勿在本项目中添加广告，如需推广可Fork后在新项目中进行
+- 切勿在本项目中添加广告，如需推广可 `Fork` 后在新项目中进行
 
-- 如遇排版问题以及内容疑问请按文章中Mailto地址联系作者解决
+- 如遇排版问题以及内容疑问请按文章中 `Mailto` 地址联系作者
 
-- 如有侵权，请按文章中的Mailto地址联系作者
+- 如有侵权或其他事项，请按文章中的 `Mailto` 地址联系作者
 
 ### 格式改进
 
-- 如无必要，不要引入更多的package
+- 如无必要，不要引入更多的 `package`
 
 （排版无需进一步改进，也改进不了……）
 
-- 请使用 VsCode 的 [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) 扩展进行自动格式化，若表格类排版格式化后难以理解请适当使用 `%` 进行断行
+- 请使用 `VsCode` 的 [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) 扩展进行自动格式化，若表格类排版格式化后难以理解请适当使用 `%` 进行断行
 
 - 请使用 `\footnotemark` 与配套的 `\footnotetext{}` 来代替传统的 `\footnote{}` 以保证排版优雅，若在同段内含有多个脚注，请参考 `document_introduction.tex` 文件内的使用方法，合理使用 `%` 换行以免空格影响排版
 
@@ -69,6 +69,6 @@
 
 ### 编译
 
-- 各文件需使用LF标记进行结尾，而不是CRLF，具体说明与设置办法参考网络教程
+- 各文件需使用 `LF` 标记进行结尾，而不是 `CRLF`，具体说明与设置办法参考网络教程
 
-- 需要使用XeLaTeX二次编译以使所有的 `\ref` 生效
+- 需要使用 `XeLaTeX` 二次编译以使所有的 `\ref` 生效
