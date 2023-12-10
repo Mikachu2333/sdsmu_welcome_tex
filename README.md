@@ -59,7 +59,7 @@
 
 - 若出现 `Overfull` 或 `Underfull` 警告，请务必进行修正，必要时使用最小工作示例（ `MWE` ，命名为 `main_test.tex` 置于工作目录文件夹内）进行排查
 
-- 文章当且仅应当出现3个 `Warning`
+- 文章当且仅应当出现1个 `Warning`
 
 - 所有链接使用 `\uline\(h)ref{链接}` 排版
 
