@@ -57,6 +57,8 @@
 
 - 请使用 `\footnotemark` 与配套的 `\footnotetext{}` 来代替传统的 `\footnote{}` 以保证排版优雅，若在同段内含有多个脚注，请参考 `document_introduction.tex` 文件内的使用方法，合理使用 `%` 换行以免空格影响排版
 
+- 如需在表格 `tabular` 环境中多次使用脚注，请使用 `\tablefootnote{}` 并使用 `%` 妥善处理排版，详情可参考“衣食购住玩与生活”章节中“其他生活常用地点”的相关排版
+
 - 若出现 `Overfull` 或 `Underfull` 警告，请务必进行修正，必要时使用最小工作示例（ `MWE` ，命名为 `main_test.tex` 置于工作目录文件夹内）进行排查
 
 - 文章当且仅应当出现1个 `Warning`
