@@ -2,7 +2,7 @@
 
 曾用名：《潍坊医学院新生入学指南》、《潍医入学与生活指南》、《山二医入学与生活指南（浮烟山校区）》等
 
-1. 本指南采用 `TeX` 语言编写而成，使用 `XeLaTeX` 二次编译为 `pdf` 发布。
+1. 本指南采用 `TeX` 语言编写而成，使用 `XeLaTeX` 三次编译为 `pdf` 发布。
 
 2. 采用 `CC BY-SA 4.0` 许可证。
 
@@ -61,7 +61,7 @@
 
 - 若出现 `Overfull` 或 `Underfull` 警告，请务必进行修正，必要时使用最小工作示例（ `MWE` ，命名为 `main_test.tex` 置于工作目录文件夹内）进行排查
 
-- 文章当且仅应当出现1个 `Warning`：`Label(s) may have changed. Rerun to get cross-references right.`
+- 文章不应当出现任何 `Warning` 或 `Error`
 
 - 所有链接使用 `\uline\(h)ref{链接}` 排版
 
@@ -75,4 +75,4 @@
 
 - 各文件需使用 `LF` 标记进行结尾，而不是 `CRLF`，具体说明与设置办法参考网络教程
 
-- 需要使用 `XeLaTeX` 二次编译以使所有的 `\ref` 生效
+- 需要使用 `XeLaTeX` 三次编译以使所有的 `\ref` 生效，且无任何 `Warning`
