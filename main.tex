@@ -29,6 +29,10 @@
     subsection={
         beforeskip=0ex,
         afterskip=0ex
+    },
+    subsubsection={
+        beforeskip=0ex,
+        afterskip=0ex
     }
 }
 
@@ -43,7 +47,7 @@
 
 % 段间距与行间距重设定
 \setlength{\parskip}{.75ex plus 5pt minus 8pt}
-\setlength{\lineskip}{.5ex plus 4pt minus 4pt}
+\setlength{\lineskip}{.5ex plus 5pt minus 8pt}
 
 % 页眉页脚
 \pagestyle{fancy}
@@ -61,6 +65,12 @@
 \setlist[enumerate,3]{label=[\arabic*]}
 \setlist[enumerate,4]{label=<\arabic*>}
 \setlist[enumerate]{itemsep=0pt}
+
+%增加表格样式
+\DefTblrTemplate{note-text}{default}{{\footnotesize\InsertTblrNoteText}}
+\NewTblrTheme{no-caption}{
+    \SetTblrTemplate{caption}{empty}
+}
 
 % 设置校徽背景命令
 \newcommand\BackgroundPic{%
