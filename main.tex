@@ -1,14 +1,15 @@
 % !TeX encoding = UTF-8
+% !TEX TS-program = xelatex
 
-% 山二医入学与生活指南 © 2023 by LinkChou is licensed under CC BY-SA 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/
+% 山东第二医科大学入学与生活指南 © 2023-2024 by LinkChou is licensed under CC BY-SA 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/
 
 % 导入所需的package
 \documentclass[a4paper,twoside,onecolumn,12pt,fontset=none]{ctexrep}
 \usepackage{bxtexlogo,color}
-\usepackage{fancyhdr,titlesec,tablefootnote}
+\usepackage{fancyhdr,titlesec}
 \usepackage{indentfirst,ulem}
 \usepackage{float,graphicx}
-\usepackage{multirow,booktabs,makecell,amssymb,array}
+\usepackage{tabularray}
 \usepackage{enumitem}
 \usepackage[a4paper, hmargin=1.5cm, top=1.2cm, bottom=1.5cm, headheight=0pt, ignorehead]{geometry}
 \usepackage[final=true, colorlinks, hidelinks, bookmarks, bookmarksnumbered=true]{hyperref}
@@ -27,6 +28,10 @@
     subsection={
         beforeskip=0ex,
         afterskip=0ex
+    },
+    subsubsection={
+        beforeskip=0ex,
+        afterskip=0ex
     }
 }
 
@@ -41,7 +46,7 @@
 
 % 段间距与行间距重设定
 \setlength{\parskip}{.75ex plus 5pt minus 8pt}
-\setlength{\lineskip}{.5ex plus 4pt minus 4pt}
+\setlength{\lineskip}{.5ex plus 5pt minus 8pt}
 
 % 页眉页脚
 \pagestyle{fancy}
@@ -60,13 +65,21 @@
 \setlist[enumerate,4]{label=<\arabic*>}
 \setlist[enumerate]{itemsep=0pt}
 
+%重定义并增加表格样式
+\DefTblrTemplate{note-text}{default}{{\footnotesize\InsertTblrNoteText}}
+\DefTblrTemplate{remark-tag}{default}{{\footnotesize\bfseries\InsertTblrRemarkTag}}
+\DefTblrTemplate{remark-text}{default}{{\footnotesize\InsertTblrRemarkText}}
+\NewTblrTheme{no-caption}{
+    \SetTblrTemplate{caption}{empty}
+}
+
 % 设置校徽背景命令
-\newcommand\BackgroundPic{%
-  \parbox{\paperwidth}{%
-    \centering
-    \vspace*{300pt}
-    \includegraphics[width=5cm]{logo.pdf}%
-  }
+\newcommand\BackgroundPic{
+    \noindent\parbox{\paperwidth}{
+        \centering
+        \vspace*{400pt}
+        \noindent\includegraphics[width=5cm]{logo.pdf}
+    }
 }
 
 % 开始正文
@@ -76,18 +89,19 @@
 \input{special_thanks.tex}%特别感谢
 
 \input{document_introduction.tex}%前言
-\input{school_map.tex}%地图
-\input{school_readiness.tex}%入学准备
-\input{school_register.tex}%入学报到
-\input{dormitory.tex}%宿舍
-\input{military_training.tex}%军训
-\input{study.tex}%学习
+
+\input{school_calendar.tex}%校历
+
+\input{freshmen_register.tex}%新生报道
+
+\input{context_fuyanshan.tex}%浮烟山章节
+\input{context_yuhe.tex}%虞河章节
+
 \input{security.tex}%安全
-\input{school_life.tex}%衣食购住玩生活
-\input{cost.tex}%学费
-\input{community_summary.tex}%社团
-\input{common_tutorials.tex}%常用教程
-\input{QQgroup_fellow_townsman.tex}%老乡群
-\input{common_websites_apps.tex}%常用网站及app
+\input{study.tex}%学习
+
+\input{generic_tutorials_context.tex}%通用指南目录
+
+\input{epilogue.tex}
 
 \end{document}
