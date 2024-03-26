@@ -66,19 +66,21 @@
 \setlist[enumerate,4]{label=<\arabic*>}
 \setlist[enumerate]{itemsep=0pt}
 
-%增加表格样式
+%重定义并增加表格样式
 \DefTblrTemplate{note-text}{default}{{\footnotesize\InsertTblrNoteText}}
+\DefTblrTemplate{remark-tag}{default}{{\footnotesize\bfseries\InsertTblrRemarkTag}}
+\DefTblrTemplate{remark-text}{default}{{\footnotesize\InsertTblrRemarkText}}
 \NewTblrTheme{no-caption}{
     \SetTblrTemplate{caption}{empty}
 }
 
 % 设置校徽背景命令
-\newcommand\BackgroundPic{%
-  \parbox{\paperwidth}{%
-    \centering
-    \vspace*{300pt}
-    \includegraphics[width=5cm]{logo.pdf}%
-  }
+\newcommand\BackgroundPic{
+    \noindent\parbox{\paperwidth}{
+        \centering
+        \vspace*{400pt}
+        \noindent\includegraphics[width=5cm]{logo.pdf}
+    }
 }
 
 % 开始正文
@@ -88,6 +90,8 @@
 \input{special_thanks.tex}%特别感谢
 
 \input{document_introduction.tex}%前言
+
+\input{school_calendar.tex}%校历
 
 \input{freshmen_register.tex}%新生报道
 

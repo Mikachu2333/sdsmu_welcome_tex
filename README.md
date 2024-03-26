@@ -1,6 +1,6 @@
-# 山东第二医科大学入学与生活指南【简称：321新指南】
+# 山东第二医科大学指南【简称：321指南】
 
-曾用名：《潍坊医学院新生入学指南》、《潍医入学与生活指南》、《山二医入学与生活指南（浮烟山校区）》等
+曾用名：《潍坊医学院新生入学指南》《山东第二医科大学入学与生活指南》等
 
 1. 因学业压力以及本指南已经基本完善，项目转入消极维护状态。
 
@@ -12,7 +12,7 @@
 
 注意：需要 `Google Chrome`、`Firefox`、`Edge` 等现代化的浏览器，`IE11` 等老旧浏览器可能无法正常显示。
 
-- 在Gitee仓库的“[发行版](https://gitee.com/mikazo/latex_version/releases/latest)”下载
+- 在Gitee仓库的“[发行版](https://gitee.com/LinkChou/sdsmu_welcome_tex/releases/latest)”下载
 
 ## 编写目的
 
@@ -34,11 +34,12 @@
 
 - 如无必要，不要引入更多的 `package`（排版无需进一步改进，也改进不了……）
 
-- 请使用 `VSCode` 的 [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) 扩展进行自动格式化，请按照[此issue](https://github.com/cmhughes/latexindent.pl/issues/529)的指引设置LaTeX Workshop，另附详细配置如下：
+- 请使用 `VSCode` 的 [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) 扩展进行自动格式化，另附详细配置如下：
 
 <details><summary>VSCode配置</summary>
 
 ```json
+    "latex-workshop.bibtex-fields.sort.enabled": true,
     "latex-workshop.bibtex-format.sort.enabled": true,
     "latex-workshop.bibtex-format.tab": "4 spaces",
     "latex-workshop.intellisense.file.base": "both",
@@ -115,12 +116,11 @@
         }
     ],
     "latex-workshop.latexindent.args": [
-        "--overwriteIfDifferent",
         "--cruft=%DIR%/",
+        "%TMPFILE%",
         "--modifylinebreaks",
-        "--yaml=defaultIndent: '    '",
         "--GCString",
-        "%TMPFILE%"
+        "--yaml=defaultIndent: '    '"
     ],
     "latex-workshop.latexindent.path": "D:\\texlive\\2024\\bin\\windows\\latexindent.exe",
     "latex-workshop.message.error.show": false,
@@ -136,26 +136,25 @@
 </details>
 
 ---
-- 请使用 `\footnotemark` 与配套的 `\footnotetext{}` 来代替传统的 `\footnote{}` 以保证排版优雅，若在同段内含有多个脚注，请参考 `document_introduction.tex` 文件的内容，合理使用 `%` 换行以免空格影响排版
 
-- 如需在表格 `tabular` 环境中多次使用脚注，请使用 `\tablefootnote{}` 并使用 `%` 妥善处理排版，详情可参考“衣食购住玩与生活”章节中“其他生活常用地点”的相关排版
+- 请使用 `\footnotemark` 与配套的 `\footnotetext{}` 来代替传统的 `\footnote{}` 以保证编写时代码与文本整洁、优雅，若在同段内含有多个脚注，请合理使用 `%` 或换行符以免空格影响排版
 
-- 若出现 `Overfull` 或 `Underfull` 警告，请务必进行修正，必要时使用最小工作示例（ `MWE` ，命名为 `main_test.tex` 置于工作目录文件夹内）进行排查
+- 如需在表格 `tblr` 环境中多次使用脚注，请使用 `note{}={}` 并使用外部参数 `long` 传参给 `tblr` 结构，详情可参考 `浮烟山校区` → `衣食购住玩与生活` → `其他生活常用地点` 的相关排版，宏包中文译本文档 [见此](https://gitee.com/nwafu_nan/tabularray-doc-zh-cn)
+
+- 若出现 `Overfull` 或 `Underfull` 警告，请务必进行修正，必要时使用最小工作示例（`MWE`）进行排查
 
 - 文章不应当出现任何 `Warning` 或 `Error`
 
 - 所有链接使用 `\uline\(h)ref{链接}` 排版
 
-- 特殊强调事项使用 `\textbf{\uuline{强调}}` 排版，因 `\uuline{}` 无法自动换行，如因句子长度超限需要换行，请编译和根据输出的文档手动调整为如下格式 `\textbf{\uuline{强调内容}\\\uuline{换行后强调内容}}`
+- 特殊强调事项使用 `\textbf{\uuline{强调}}` 排版，因 `\uuline{}` 无法自动换行，如因句子长度超限需要换行，请编译和根据输出的文档手动调整为如下格式 `\textbf{\uuline{强调内容\\换行后强调内容}}`
 
 - 如需对链接进行强调，请使用 `\textbf{\uline{\(h)ref{强调链接}}}` 排版
 
-- 彩色文字不应当被滥用
-
-- `ReadMe` 文件中的叙述类段落应当使用 `&emsp;&emsp;` 实现开头空两格
+- **彩色文字不应当被滥用**
 
 ### 编译
 
 - 各文件需使用 `LF` 标记进行结尾，而不是 `CRLF`，具体说明与设置办法参考网络教程
 
-- 需要使用 `XeLaTeX` 三次编译以使所有的 `\ref` 生效，且无任何 `Warning`
+- 需要使用 `XeLaTeX` 2次编译以使所有的 `\ref` 生效，且无任何 `Warning`

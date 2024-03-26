@@ -3,10 +3,9 @@
 
 \section*{特别说明}
 \begin{enumerate}
-      \item 本节中所有上标“㊕”的网址仅在连接校园网时可成功访问相关服务。
-      \item \textbf{严禁使用QQ、微信直接打开本文提及的一切网址，必须使用正常更新的主流浏览器打开！}
+    \item 本节中所有上标“㊕”的网址仅在连接校园网时可成功访问相关服务。
+    \item \textbf{严禁使用QQ、微信直接打开本文提及的一切网址，必须使用正常更新的主流浏览器打开！}
 \end{enumerate}
-
 
 \section[网站]{网站}
 \subsection[学院主站]{学院主站}
@@ -139,18 +138,19 @@
 
 \subsection[常用课程表对比]{常用课程表对比}
 \label{schedule}
-\begin{center}
-    \centering
-    \begin{tabular}{|c|c|c|c|c|}
-        \Xhline{1.2pt}
-        程序名称      & 广告 & 难易程度 & 使用人数 & 各类功能               \\
-        \Xhline{1.2pt}
-        Wakeup课程表 & 无  & 中等   & 中等   & 分享，教务导入，桌面小工具，调课等  \\
-        \hline
-        超级课程表     & 有  & 容易   & 多    & 同上，另有“蹭课”等功能，部分需会员 \\
-        \hline
-        山二医app    & 无  & 容易   & 较少   & 极少，但与官方教务系统同步，不折腾  \\
-        \Xhline{1.2pt}
-    \end{tabular}
-\end{center}
+\begin{tblr}[long,theme =no-caption]{
+    cells = {c,m},
+    rowhead=1,
+    hlines,
+    vlines,
+    row{1} = {cmd=\bfseries},
+    vlines,
+    hline{1-2,5} = {-}{1pt},
+            hline{3-4} = {-}{},
+        }
+    程序名称      & 广告 & 难易程度 & 使用人数 & 各类功能               \\
+    Wakeup课程表 & 无  & 中等   & 中等   & 分享，教务导入，桌面小工具，调课等  \\
+    超级课程表     & 有  & 容易   & 多    & 同上，另有“蹭课”等功能，部分需会员 \\
+    山二医app    & 无  & 容易   & 较少   & 极少，但与官方教务系统同步，不折腾
+\end{tblr}
 
