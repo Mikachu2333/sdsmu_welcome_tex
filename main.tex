@@ -5,15 +5,15 @@
 
 % 导入所需的package
 \documentclass[a4paper,twoside,onecolumn,12pt,fontset=none]{ctexrep}
-\usepackage{bxtexlogo,color}
-\usepackage{fancyhdr,titlesec}
-\usepackage{indentfirst,ulem}
-\usepackage{float,graphicx}
-\usepackage{tabularray}
-\usepackage{enumitem}
-\usepackage[a4paper, hmargin=1.5cm, top=1.2cm, bottom=1.5cm, headheight=0pt, ignorehead]{geometry}
-\usepackage[final=true, colorlinks, hidelinks, bookmarks, bookmarksnumbered=true]{hyperref}
-\usepackage{datetime2}
+\usepackage{bxtexlogo}%LaTeX logo(禁止换用hvlogos package，因其会重定义部分字体导致报错)
+\usepackage{fancyhdr,titlesec}%标题、脚注格式
+\usepackage{indentfirst,ulem,color}%段落、文字格式
+\usepackage{float,graphicx}%图表位置
+\usepackage{tabularray}%表格排版
+\usepackage{enumitem}%列表排版
+\usepackage[a4paper, hmargin=1.5cm, top=1.2cm, bottom=1.5cm, headheight=0pt, ignorehead]{geometry}%页边距与排版
+\usepackage[final=true, colorlinks, hidelinks, bookmarks, bookmarksnumbered=true]{hyperref}%超链接
+\usepackage{datetime2}%扉页的时间
 
 % 重设定间距
 \ctexset{
@@ -65,7 +65,7 @@
 \setlist[enumerate,4]{label=<\arabic*>}
 \setlist[enumerate]{itemsep=0pt}
 
-%重定义并增加表格样式
+%重定义表格脚注字体大小并增加“no-caption”表格样式
 \DefTblrTemplate{note-text}{default}{{\footnotesize\InsertTblrNoteText}}
 \DefTblrTemplate{remark-tag}{default}{{\footnotesize\bfseries\InsertTblrRemarkTag}}
 \DefTblrTemplate{remark-text}{default}{{\footnotesize\InsertTblrRemarkText}}
@@ -73,7 +73,7 @@
     \SetTblrTemplate{caption}{empty}
 }
 
-% 设置校徽背景命令
+% 设置校徽命令
 \newcommand\BackgroundPic{
     \noindent\parbox{\paperwidth}{
         \centering
@@ -86,8 +86,8 @@
 \begin{document}
 
 \input{preface.tex}%标题、目录
-\input{special_thanks.tex}%特别感谢
 
+\input{special_thanks.tex}%特别感谢
 \input{document_introduction.tex}%前言
 
 \input{school_calendar.tex}%校历
@@ -102,6 +102,6 @@
 
 \input{generic_tutorials_context.tex}%通用指南目录
 
-\input{epilogue.tex}
+\input{epilogue.tex}%后记
 
 \end{document}
