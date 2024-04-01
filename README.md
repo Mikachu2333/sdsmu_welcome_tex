@@ -72,26 +72,14 @@
     "latex-workshop.latex.recipe.default": "lastUsed",
     "latex-workshop.latex.recipes": [
         {
-            "name": "XeLaTeX *2",
+            "name": "LaTeXmkXe",
             "tools": [
-                "xelatex",
-                "xelatex"
+                "latexmkxe"
             ]
         },
         {
-            "name": "XeLaTeX *3",
+            "name": "XeLaTeX",
             "tools": [
-                "xelatex",
-                "xelatex",
-                "xelatex"
-            ]
-        },
-        {
-            "name": "XeLaTeX -> BibTeX",
-            "tools": [
-                "xelatex",
-                "bibtex",
-                "xelatex",
                 "xelatex"
             ]
         }
@@ -108,11 +96,17 @@
             "name": "xelatex"
         },
         {
+            "name": "latexmkxe",
+            "command": "latexmk",
             "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-shell-escape",
+                "-halt-on-error",
+                "-file-line-error",
+                "-xelatex",
                 "%DOCFILE%"
-            ],
-            "command": "bibtex",
-            "name": "bibtex"
+            ]
         }
     ],
     "latex-workshop.latexindent.args": [
@@ -122,7 +116,7 @@
         "--GCString",
         "--yaml=defaultIndent: '    '"
     ],
-    "latex-workshop.latexindent.path": "D:\\texlive\\2024\\bin\\windows\\latexindent.exe",
+    "latex-workshop.latexindent.path": "latexindent",
     "latex-workshop.message.error.show": false,
     "latex-workshop.message.information.show": true,
     "latex-workshop.message.warning.show": false,
