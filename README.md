@@ -67,7 +67,8 @@
         "*.lot",
         "*.out",
         "*.synctex.gz",
-        "*.toc"
+        "*.toc",
+        "*.xdv"
     ],
     "latex-workshop.latex.recipe.default": "lastUsed",
     "latex-workshop.latex.recipes": [
@@ -151,4 +152,4 @@
 
 - 各文件需使用 `LF` 标记进行结尾，而不是 `CRLF`，具体说明与设置办法参考网络教程
 
-- 需要使用 `XeLaTeX` 2次编译以使所有的 `\ref` 生效，且无任何 `Warning`
+- 需要使用 `LaTeXmk` 编译以使所有的 `\ref` 生效，且无任何 `Warning`

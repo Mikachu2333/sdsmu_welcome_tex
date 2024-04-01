@@ -19,6 +19,7 @@
 *.out
 *.synctex*
 *.toc
+*.xdv
 
 # latexindent
 __latexindent*
