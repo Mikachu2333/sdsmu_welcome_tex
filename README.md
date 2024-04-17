@@ -40,9 +40,9 @@
 
 - 请使用 `VSCode` 的 [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) 扩展进行自动格式化，另附详细配置如下：
 
-<details><summary>VSCode配置</summary>
+- <details><summary>VSCode配置</summary>
 
-```json
+  ```json
     "latex-workshop.bibtex-fields.sort.enabled": true,
     "latex-workshop.bibtex-format.sort.enabled": true,
     "latex-workshop.bibtex-format.tab": "4 spaces",
@@ -132,7 +132,8 @@
     "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
     "latex-workshop.view.pdf.viewer": "browser",
   ```
-</details>
+
+  </details>
 
 ---
 
