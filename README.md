@@ -95,7 +95,7 @@
                 "-synctex=1",
                 "-interaction=nonstopmode",
                 "-file-line-error",
-                "%DOCFILE%"
+                "%DIR%/main.tex"
             ],
             "command": "xelatex",
             "name": "xelatex"
@@ -110,7 +110,7 @@
                 "-halt-on-error",
                 "-file-line-error",
                 "-xelatex",
-                "%DOCFILE%"
+                "%DIR%/main.tex"
             ]
         }
     ],
