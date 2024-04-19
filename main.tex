@@ -4,7 +4,7 @@
 % 山东第二医科大学入学与生活指南 © 2023-2024 by LinkChou is licensed under CC BY-SA 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/
 
 % 导入所需的package
-\documentclass[a4paper,twoside,onecolumn,12pt,fontset=none]{ctexrep}%ctexreport文档类
+\documentclass[a4paper,twoside,onecolumn,12pt,fontset=none]{ctexrep}%ctexreport文档类，fontset=none避免字体冲突警告
 \usepackage{bxtexlogo}%LaTeX logo（禁止换用hvlogos，因其会重定义部分字体导致报错）
 \usepackage{fancyhdr,titlesec}%标题、脚注格式
 \usepackage{indentfirst,ulem,color}%段落、文字格式
@@ -14,9 +14,9 @@
 \usepackage{enumitem}%列表排版
 \usepackage[a4paper, hmargin=1.5cm, top=1.2cm, bottom=1.5cm, headheight=0pt, ignorehead]{geometry}%页边距与排版
 \usepackage[final=true, colorlinks, hidelinks, bookmarks, bookmarksnumbered=true]{hyperref}%超链接
-\usepackage{datetime2}%扉页的时间
+\usepackage{datetime2}%扉页时间
 
-% 重设定间距
+% 重设定标题与正文间距
 \ctexset{
     chapter={
         beforeskip=0ex,
@@ -36,11 +36,11 @@
     }
 }
 
-% 重定义部分logo符号以免错误
+% 重定义部分logo符号以免冲突
 \bxtexlogoimport{XeLaTeX}
 \bxtexlogoimport{LaTeXe}
 
-% 重定义文章字体
+% 重定义文章字体为梦源宋体（不使用思源宋体的原因是思源的行高过高）
 \setmainfont[BoldFont=Dream Han Serif CN W20]{Dream Han Serif CN W7}
 \setCJKmainfont{Dream Han Serif CN W7}[BoldFont=Dream Han Serif CN W20]
 \setCJKsansfont[BoldFont=Dream Han Serif CN W20]{Dream Han Serif CN W7}
@@ -54,7 +54,7 @@
 \fancyhf{}
 \fancyfoot[C]{\thepage}
 
-% 脚注格式
+% 脚注格式（无分割线）
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
