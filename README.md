@@ -7,16 +7,24 @@
 2. 采用 `CC BY-SA 4.0` 许可证。
 
 ## 下载
-### 正式版
+### 文档
+#### 正式版
 
 - **在“[腾讯文档](https://docs.qq.com/s/ETcQ-ZFSrSsh6MK9bm773q)”中在线查看与下载**（推荐）
     > **注意**：需要 `Google Chrome`、`Firefox`、`Edge` 等现代化的浏览器，`IE11` 等老旧浏览器可能无法正常显示。
 - 在Gitee仓库的“[发行版](https://gitee.com/LinkChou/sdsmu_welcome_tex/releases/latest)”下载
 - 在GitHub仓库的“[Releases](https://github.com/Mikachu2333/sdsmu_welcome_tex/releases/latest)”下载
 
-### Preview版
+#### Preview版
 - 在Gitee仓库的“[发行版](https://gitee.com/LinkChou/sdsmu_welcome_tex/releases/latest)”下载（仅含有部分Preview版本）
 - 自行运行 `git clone` 后本地编译
+
+### 地图
+#### 百度网盘（电脑推荐）
+[https://pan.baidu.com/s/1cZpGGFIABB50u-3lst44iQ?pwd=46pa](https://pan.baidu.com/s/1cZpGGFIABB50u-3lst44iQ?pwd=46pa)
+
+#### 阿里云网盘（手机推荐）
+[https://www.alipan.com/s/dZMvgXwkxGp](https://www.alipan.com/s/dZMvgXwkxGp)
 
 ## 编写目的
 
