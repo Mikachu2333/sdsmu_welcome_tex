@@ -75,34 +75,49 @@
 }
 
 % 设置校徽命令
-\newcommand\BackgroundPic{
+\newcommand{\BackgroundPic}{
     \noindent\parbox{\paperwidth}{
         \centering
         \vspace*{400pt}
-        \noindent\includegraphics[width=5cm]{logo.pdf}
+        \noindent\includegraphics[width=5cm]{resources/sundry/logo.pdf}
     }
 }
 
-% 开始正文
+% 颜色重设定
+\newcommand{\colored}[4]{
+    \textcolor[rgb]{#1,#2,#3}{#4}
+}
+
+% 时间样式重设定
+\newcommand{\CurrentCustomTime}{
+    \DTMsavenow{Compiled_time}%保存编译时间
+    \DTMfetchyear{Compiled_time}.%
+    \DTMtwodigits{\DTMfetchmonth{Compiled_time}}.%
+    \DTMtwodigits{\DTMfetchday{Compiled_time}}\quad%
+    \DTMtwodigits{\DTMfetchhour{Compiled_time}}:%
+    \DTMtwodigits{\DTMfetchminute{Compiled_time}}\quad%
+    GMT+08:00
+}
+
 \begin{document}
 
-\input{preface.tex}%标题、目录
+\input{doc_related/preface.tex}%标题、目录
 
-\input{special_thanks.tex}%特别感谢
-\input{document_introduction.tex}%前言
+\input{doc_related/special_thanks.tex}%特别感谢
+\input{doc_related/document_introduction.tex}%前言
 
-\input{school_calendar.tex}%校历
+\input{academic_calender/school_calendar.tex}%校历
 
-\input{freshmen_register.tex}%新生报道
+\input{before_school/content_freshmen_register.tex}%新生报道
 
-\input{context_fuyanshan.tex}%浮烟山章节
-\input{context_yuhe.tex}%虞河章节
+\input{in_school/context_fuyanshan.tex}%浮烟山章节
+\input{in_school/context_yuhe.tex}%虞河章节
 
-\input{security.tex}%安全
-\input{study.tex}%学习
+\input{in_school/life/security.tex}%安全
+\input{in_school/life/study.tex}%学习
 
-\input{generic_tutorials_context.tex}%通用指南目录
+\input{in_school/tutorial/context_generic_tutorials.tex}%通用指南目录
 
-\input{epilogue.tex}%后记
+\input{doc_related/epilogue.tex}%后记
 
 \end{document}

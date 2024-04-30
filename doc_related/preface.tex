@@ -3,20 +3,23 @@
 % 添加标题校徽背景图
 \AddToHookNext{shipout/background}{\BackgroundPic}
 
+% 保存时间
+\DTMsavenow{Compiled_time}
+
 % 题目
 \title{%
 \normalsize
 \vspace{100pt}
 {\Huge\textbf{山东第二医科大学指南}}\\[10pt]
-（简称：\textcolor{red}{321指南}）\\[30pt]
-%{\large\textcolor{blue}{\textbf{3.0.2}}}\vspace*{-25pt}}
-{\large\textcolor{red}{312-Preview}}\vspace*{-25pt}}
-\author{LinkChou\thanks{Compiled by \LaTeXe, CC BY-SA 4.0 LICENSE.\ %
+（简称：\colored{0.67}{0.31}{0.14}{321指南}）\\[30pt]
+%{\large\textbf{\colored{0.28}{0.33}{0.56}{3.0.2}}}\vspace*{-25pt}}
+{\large\colored{1}{0}{0}{313-Preview}}\vspace*{-25pt}}
+\author{LinkChou\thanks{Compiled by \LaTeXe, CC BY-SA 4.0 LICENSE.\qquad%
         \uline{\href{Mailto:LinkChou@yandex.com}{Mailto: LinkChou@yandex.com}}\\
         \textbf{敬告：}\\
         \indent\indent 力薄才疏，不免舛误，敬请绳愆纠缪。具体内容均以学校官方为准，如有变更恕不另行通知。}
     \and 山东第二医科大学频道}
-\date{\DTMnow}
+\date{\colored{0.19}{0.4}{0.25}{\CurrentCustomTime}}
 \maketitle
 
 % 脚注样式重设定
