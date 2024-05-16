@@ -51,8 +51,8 @@ jobs:
             -halt-on-error 
             -file-line-error
           extra_fonts: |
-            "Dream Han Serif CN W7.ttf"
-            "Dream Han Serif CN W20.ttf"
+            *.otf
+            *.ttf
 
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
