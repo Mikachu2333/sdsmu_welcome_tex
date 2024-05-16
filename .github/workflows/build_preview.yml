@@ -51,8 +51,8 @@ jobs:
             -halt-on-error 
             -file-line-error
           extra_fonts: |
-            *.otf
-            *.ttf
+            ./*.otf
+            ./*.ttf
 
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
