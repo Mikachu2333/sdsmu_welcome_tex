@@ -22,7 +22,7 @@
 *.xdv
 
 # latexindent
-__latexindent*
+**__latexindent*
 *.bak*
 
 # pdf

@@ -53,7 +53,6 @@
   ```json
     "latex-workshop.bibtex-fields.sort.enabled": true,
     "latex-workshop.bibtex-format.sort.enabled": true,
-    "latex-workshop.bibtex-format.tab": "4 spaces",
     "latex-workshop.intellisense.file.base": "both",
     "latex-workshop.intellisense.package.enabled": true,
     "latex-workshop.intellisense.triggers.latex": [],
@@ -123,11 +122,11 @@
         }
     ],
     "latex-workshop.latexindent.args": [
-        "--cruft=%DIR%/",
+        "-c=%DIR%/",
         "%TMPFILE%",
-        "--modifylinebreaks",
+        "-m",
         "--GCString",
-        "--yaml=defaultIndent: '    '"
+        "-l=%DIR%/latexindent.yaml"
     ],
     "latex-workshop.latexindent.path": "latexindent",
     "latex-workshop.message.error.show": false,
