@@ -1,4 +1,4 @@
-# 山东第二医科大学指南【简称：321指南】
+# 山东第二医科大学指南【简称：321 指南】
 
 曾用名：《潍坊医学院新生入学指南》《山东第二医科大学入学与生活指南》等
 
@@ -7,22 +7,29 @@
 2. 采用 `CC BY-SA 4.0` 许可证。
 
 ## 下载
-### 文档
-#### 正式版
-- **在“[腾讯文档](https://docs.qq.com/s/ETcQ-ZFSrSsh6MK9bm773q)”中在线查看与下载**（推荐）
-    > **注意**：需要 `Google Chrome`、`Firefox`、`Edge` 等现代化的浏览器，`IE11` 等老旧浏览器可能无法正常显示。
-- 在Gitee仓库的“[发行版](https://gitee.com/LinkChou/sdsmu_welcome_tex/releases/latest)”下载
-- 在GitHub仓库的“[Releases](https://github.com/Mikachu2333/sdsmu_welcome_tex/releases/latest)”下载
 
-#### Preview版（实际内容以最新正式版为准）
-- 在GitHub仓库的“[Actions](https://github.com/Mikachu2333/sdsmu_welcome_tex/actions)”中下载最新自动编译的版本（仅含部分Preview版本）
+### 文档
+
+#### 正式版
+
+- **在“[腾讯文档](https://docs.qq.com/s/ETcQ-ZFSrSsh6MK9bm773q)”中在线查看与下载**（推荐）
+  > **注意**：需要 `Google Chrome`、`Firefox`、`Edge` 等现代化的浏览器，`IE11` 等老旧浏览器可能无法正常显示。
+- 在 Gitee 仓库的“[发行版](https://gitee.com/LinkChou/sdsmu_welcome_tex/releases/latest)”下载
+- 在 GitHub 仓库的“[Releases](https://github.com/Mikachu2333/sdsmu_welcome_tex/releases/latest)”下载
+
+#### Preview 版（实际内容以最新正式版为准）
+
+- 在 GitHub 仓库的“[Actions](https://github.com/Mikachu2333/sdsmu_welcome_tex/actions)”中下载最新自动编译的版本（仅含部分 Preview 版本）
 - 自行运行 `git clone` 后本地编译
 
 ### 地图
+
 #### 百度网盘（电脑推荐）
+
 [https://pan.baidu.com/s/1cZpGGFIABB50u-3lst44iQ?pwd=46pa](https://pan.baidu.com/s/1cZpGGFIABB50u-3lst44iQ?pwd=46pa)
 
 #### 阿里云网盘（手机推荐）
+
 [https://www.alipan.com/s/dZMvgXwkxGp](https://www.alipan.com/s/dZMvgXwkxGp)
 
 ## 编写目的
