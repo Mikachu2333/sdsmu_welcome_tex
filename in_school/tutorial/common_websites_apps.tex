@@ -78,61 +78,66 @@
         \begin{tblr}[
                 long,
                 theme=no-caption,
-                note{1} = {详见下方的课程表软件对比\uline{\ref{schedule_app}}}
-            ]{
-                cells={c,m},
-                vlines,hlines}
+                note{1} = {详见下方的课程表软件对比\uline{\ref{schedule_app}}},
+            ]
+            {
+                vlines,
+                hline{1,5} = {-}{1pt},
+                hline{2-4} = {-}{},
+                cells={c,m}
+            }
+
             课程表\TblrNote{1} & 大白U帮  & \textbf{\uline{\href{http://ydxy.sdsmu.edu.cn/mobileapi_ydxy/open/goDownload}{山二医app}}} \\
             人卫               & 知到     & 医考帮                                                                                     \\
             钉钉               & 思维导图 & 腾讯会议                                                                                   \\
             词典               & 翻译     & Edge浏览器
         \end{tblr}
-
-        \subsection[QQ小程序]{QQ小程序}
-        \begin{tblr}[
-                theme=no-caption]{cells={c,m},
-                vlines,
-                hlines}
-            腾讯文档   & 金山文档 \\
-            群投票统计 & 收集表
-        \end{tblr}
     \end{minipage}
 
     \begin{minipage}{.5\textwidth}
-        \subsection[微信小程序]{微信小程序}
+        \subsection[小程序]{小程序}
         \begin{tblr}[
-                theme=no-caption]{
+                long,
+                theme=no-caption
+            ]{
                 cells={c,m},
-                cell{1}{1}={c=2},
-                hlines,
-                vlines}
+                cell{1,4}{1} = {c=2}{cmd=\bfseries},
+                cell{5}{1} = {c=2}{},
+                vlines,
+                hline{1-2,4-5,8} = {-}{1pt},
+                hline{3,6-7} = {-}{},
+            }
+            QQ小程序   &          \\
+            腾讯文档   & 金山文档 \\
+            群投票统计 & 收集表   \\
+            微信小程序 &          \\
             长江雨课堂 &          \\
             校务行     & 智慧学工 \\
-            建议诉求   & 海乐生活 \\
+            建议诉求   & 海乐生活
         \end{tblr}
-
-        \subsection[微信公众号]{微信公众号}
-        \begin{enumerate}
-            \item 青春山东（青年大学习）
-            \item 山东第二医科大学
-            \item 山东第二医科大学财务处%
-                  （\textbf{学费缴费}）
-            \item 山东第二医科大学学生之家%
-                  （\textbf{新生预报到}）
-            \item 山东第二医科大学智慧校园
-            \item 山二医文体中心
-            \item 山东第二医科大学报
-            \item 山二医图管会
-            \item 山东第二医科大学学生会
-            \item 长江雨课堂
-            \item 对分易
-            \item 海享租（空调）
-            \item 流云海印（自助打印）
-        \end{enumerate}
-
     \end{minipage}
-    \vspace*{-1em}
 }
+\vspace{1em}
+\subsection[微信公众号]{微信公众号}
+\begin{tblr}[
+        long,
+        theme=no-caption
+    ]{
+        cells={c,m},
+        cell{5}{1} = {c=2}{},
+        vlines,
+        hline{1,5-6,8} = {-}{1pt},
+        hline{4} = {-}{0.8pt},
+        hline{2-3,7} = {-}{},
+    }
+    山东第二医科大学                  & ～报           \\
+    ～学生之家（\textbf{新生预报到}） & ～智慧校园     \\
+    ～财务处（\textbf{学费缴费}）     & ～学生会       \\
+    山二医文体中心                    & ～图管会       \\
+    青春山东（青年大学习）            &                \\
+    对分易                            & 长江雨课堂     \\
+    流云海印（自助打印）              & 海享租（空调）
+\end{tblr}
 
 \subsection[常用课程表对比]{常用课程表对比}
 \label{schedule_app}
@@ -141,7 +146,6 @@
         theme = no-caption]{
         cells = {c,m},
         rowhead=1,
-        hlines,
         vlines,
         row{1} = {cmd=\bfseries},
         vlines,

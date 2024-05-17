@@ -93,11 +93,11 @@
 \newcommand{\CurrentCustomTime}{
     \DTMsavenow{Compiled_time}%保存编译时间
     \DTMfetchyear{Compiled_time}.%
-    \DTMfetchmonth{Compiled_time}.%
-    \DTMfetchday{Compiled_time}\quad%
-    \DTMfetchhour{Compiled_time}:%
-    \DTMfetchminute{Compiled_time}:%
-    \DTMfetchsecond{Compiled_time}\quad%
+    \DTMtwodigits{\DTMfetchmonth{Compiled_time}}.%
+    \DTMtwodigits{\DTMfetchday{Compiled_time}}\quad%
+    \DTMtwodigits{\DTMfetchhour{Compiled_time}}:%
+    \DTMtwodigits{\DTMfetchminute{Compiled_time}}:%
+    \DTMtwodigits{\DTMfetchsecond{Compiled_time}}\quad%
     GMT+08:00
 }
 
