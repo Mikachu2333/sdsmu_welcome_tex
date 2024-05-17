@@ -98,7 +98,7 @@
     \DTMtwodigits{\DTMfetchhour{Compiled_time}}:%
     \DTMtwodigits{\DTMfetchminute{Compiled_time}}:%
     \DTMtwodigits{\DTMfetchsecond{Compiled_time}}\quad%
-    GMT+08:00
+    GMT\DTMfetchTZhour{Compiled_time}:\DTMfetchTZminute{Compiled_time}
 }
 
 \begin{document}
