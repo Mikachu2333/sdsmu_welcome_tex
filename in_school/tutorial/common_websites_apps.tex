@@ -75,42 +75,41 @@
 \noindent\makebox[\textwidth][c]{%
     \begin{minipage}{.5\textwidth}
         \subsection[手机app]{手机app}
-        \begin{enumerate}
-            \item 课程表\footnotemark
-            \item 大白U帮
-            \item 知到
-            \item 腾讯会议
-            \item \textbf{\uline{\href{http://ydxy.sdsmu.edu.cn/mobileapi_ydxy/open/goDownload}{山二医app}}}
-            \item 欧路词典/金山词典
-            \item 百度翻译/有道翻译
-            \item 医考帮
-            \item 人卫
-            \item 饿了么/美团/大众点评
-            \item 菜鸟
-            \item 12306
-            \item 滴滴出行/花小猪
-            \item 高德地图/百度地图
-                  /腾讯地图
-        \end{enumerate}
+        \begin{tblr}[
+                long,
+                theme=no-caption,
+                note{1} = {详见下方的课程表软件对比\uline{\ref{schedule_app}}}
+            ]{
+                cells={c,m},
+                vlines,hlines}
+            课程表\TblrNote{1} & 大白U帮  & \textbf{\uline{\href{http://ydxy.sdsmu.edu.cn/mobileapi_ydxy/open/goDownload}{山二医app}}} \\
+            人卫               & 知到     & 医考帮                                                                                     \\
+            钉钉               & 思维导图 & 腾讯会议                                                                                   \\
+            词典               & 翻译     & Edge浏览器
+        \end{tblr}
 
         \subsection[QQ小程序]{QQ小程序}
-        \begin{enumerate}
-            \item 腾讯文档
-            \item 金山文档
-            \item 群投票统计
-            \item 收集表
-        \end{enumerate}
+        \begin{tblr}[
+                theme=no-caption]{cells={c,m},
+                vlines,
+                hlines}
+            腾讯文档   & 金山文档 \\
+            群投票统计 & 收集表
+        \end{tblr}
     \end{minipage}
 
     \begin{minipage}{.5\textwidth}
         \subsection[微信小程序]{微信小程序}
-        \begin{enumerate}
-            \item 智慧学工
-            \item 长江雨课堂
-            \item 校务行
-            \item 建议诉求
-            \item 海乐生活
-        \end{enumerate}
+        \begin{tblr}[
+                theme=no-caption]{
+                cells={c,m},
+                cell{1}{1}={c=2},
+                hlines,
+                vlines}
+            长江雨课堂 &          \\
+            校务行     & 智慧学工 \\
+            建议诉求   & 海乐生活 \\
+        \end{tblr}
 
         \subsection[微信公众号]{微信公众号}
         \begin{enumerate}
@@ -134,10 +133,9 @@
     \end{minipage}
     \vspace*{-1em}
 }
-\footnotetext{详见下方的课程表软件对比\uline{\ref{schedule}}}
 
 \subsection[常用课程表对比]{常用课程表对比}
-\label{schedule}
+\label{schedule_app}
 \begin{tblr}[
         long,
         theme = no-caption]{
