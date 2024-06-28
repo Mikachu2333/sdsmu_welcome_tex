@@ -7,7 +7,7 @@
 \documentclass[a4paper,twoside,onecolumn,12pt,fontset=none]{ctexrep}%ctexreport文档类，fontset=none避免字体冲突警告
 \usepackage{bxtexlogo}%LaTeX logo（禁止换用hvlogos，因其会重定义部分字体导致报错）
 \usepackage{fancyhdr,titlesec}%标题、脚注格式
-\usepackage{indentfirst,ulem,color}%段落、文字格式
+\usepackage{indentfirst,ulem,xcolor}%段落、文字格式
 \usepackage{graphicx}%插入图片
 \usepackage{float}%图表位置
 \usepackage{tabularray}%表格排版
@@ -87,7 +87,7 @@
 
 % 颜色重设定
 \newcommand{\colored}[4]{
-    \textcolor[rgb]{#1,#2,#3}{#4}
+    \textcolor[RGB]{#1,#2,#3}{#4}
 }
 
 % 时间样式重设定
