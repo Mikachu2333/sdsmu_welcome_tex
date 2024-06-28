@@ -75,18 +75,20 @@
 \noindent\makebox[\textwidth][c]{%
     \begin{minipage}{.5\textwidth}
         \subsection[手机app]{手机app}
+        \centering
         \begin{tblr}[
-                long,
-                theme=no-caption,
-                note{1} = {详见下方的课程表软件对比\uline{\ref{schedule_app}}},
+            long,
+            theme=no-caption,
+            note{1} = {详见下方的课程表软件对比\uline{\ref{schedule_app}}},
             ]
             {
-                vlines,
-                hline{1,5} = {-}{1pt},
-                hline{2-4} = {-}{},
-                cells={c,m}
+            width=\linewidth,
+            colspec={X[1]X[1]X[1]},
+            vlines,
+            hline{1,5} = {-}{1pt},
+            hline{2-4} = {-}{},
+            cells={c,m}
             }
-
             课程表\TblrNote{1} & 大白U帮  & \textbf{\uline{\href{http://ydxy.sdsmu.edu.cn/mobileapi_ydxy/open/goDownload}{山二医app}}} \\
             人卫               & 知到     & 医考帮                                                                                     \\
             钉钉               & 思维导图 & 腾讯会议                                                                                   \\
@@ -96,16 +98,19 @@
 
     \begin{minipage}{.5\textwidth}
         \subsection[小程序]{小程序}
+        \centering
         \begin{tblr}[
-                long,
-                theme=no-caption
+            long,
+            theme=no-caption
             ]{
-                cells={c,m},
-                cell{1,4}{1} = {c=2}{cmd=\bfseries},
-                cell{5}{1} = {c=2}{},
-                vlines,
-                hline{1-2,4-5,8} = {-}{1pt},
-                hline{3,6-7} = {-}{},
+            cells={c,m},
+            width=0.6\linewidth,
+            colspec={X[1]X[1]X[1]},
+            cell{1,4}{1} = {c=2}{cmd=\bfseries},
+            cell{5}{1} = {c=2}{},
+            vlines,
+            hline{1-2,4-5,8} = {-}{1pt},
+            hline{3,6-7} = {-}{},
             }
             QQ小程序   &          \\
             腾讯文档   & 金山文档 \\
@@ -120,15 +125,17 @@
 \vspace{1em}
 \subsection[微信公众号]{微信公众号}
 \begin{tblr}[
-        long,
-        theme=no-caption
+    long,
+    theme=no-caption
     ]{
-        cells={c,m},
-        cell{5}{1} = {c=2}{},
-        vlines,
-        hline{1,5-6,8} = {-}{1pt},
-        hline{4} = {-}{0.8pt},
-        hline{2-3,7} = {-}{},
+    width=0.6\linewidth,
+    colspec={X[1]X[1]X[1]},
+    cells={c,m},
+    cell{5}{1} = {c=2}{},
+    vlines,
+    hline{1,5-6,8} = {-}{1pt},
+    hline{4} = {-}{0.8pt},
+    hline{2-3,7} = {-}{},
     }
     山东第二医科大学                  & ～报           \\
     ～学生之家（\textbf{新生预报到}） & ～智慧校园     \\
