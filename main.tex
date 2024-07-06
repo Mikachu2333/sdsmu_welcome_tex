@@ -76,6 +76,10 @@
     \SetTblrTemplate{caption}{empty}
 }
 
+%重定义表格换页时内容
+\DefTblrTemplate{contfoot-text}{default}{续下页}
+\DefTblrTemplate{conthead-text}{default}{（续）}
+
 % 设置校徽命令
 \newcommand{\BackgroundPic}{
     \noindent\parbox{\paperwidth}{
@@ -125,5 +129,4 @@
 \input{in_school/tutorial/content_generic_tutorials.tex}%通用指南目录
 
 \input{doc_related/epilogue.tex}%后记
-
 \end{document}
