@@ -79,7 +79,7 @@
 
 \newpage
 \section[应用]{应用}
-\noindent\makebox[\textwidth][c]{%
+\makebox[\textwidth][c]{%
     \begin{minipage}{.6\textwidth}
         \subsection[手机app]{手机app}
         \centering
@@ -92,8 +92,8 @@
             width = 0.9\linewidth,
             colspec = {X[1]X[1]X[1]},
             vlines,
+            hlines,
             hline{1,6} = {-}{1pt},
-            hline{2-5} = {-}{},
             cells={c,m}
             }
             课程表\TblrNote{1} & 大白U帮  & \textbf{\uline{\href{http://ydxy.sdsmu.edu.cn/mobileapi_ydxy/open/goDownload}{山二医app}}} \\
@@ -117,8 +117,8 @@
             cell{1,4}{1} = {c=2}{cmd=\bfseries},
             cell{5}{1} = {c=2}{},
             vlines,
+            hlines,
             hline{1-2,4-5,8} = {-}{1pt},
-            hline{3,6-7} = {-}{},
             }
             QQ小程序   &          \\
             腾讯文档   & 金山文档 \\
@@ -141,9 +141,9 @@
     cells={c,m},
     cell{7}{1} = {c=2}{},
     vlines,
+    hlines,
     hline{1,7-8,10} = {-}{1pt},
     hline{4} = {-}{0.8pt},
-    hline{2-3,5-6,9} = {-}{},
     }
     山东第二医科大学                  & ～报           \\
     ～学生之家（\textbf{新生预报到}） & ～智慧校园     \\
@@ -160,14 +160,14 @@
 \label{schedule_app}
 \begin{tblr}[
         long,
-        theme = no-caption]{
+        theme = no-caption
+    ]{
         cells = {c,m},
+        row{1} = {cmd=\bfseries},
         rowhead=1,
         vlines,
-        row{1} = {cmd=\bfseries},
-        vlines,
+        hlines,
         hline{1-2,5} = {-}{1pt},
-        hline{3-4} = {-}{},
     }
     程序名称     & 广告 & 难易程度 & 使用人数 & 各类功能                           \\
     Wakeup课程表 & 无   & 中等     & 中等     & 分享，教务导入，桌面小工具，调课等 \\

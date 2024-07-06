@@ -39,8 +39,8 @@
         cell{4}{1} = {r=3}{},
         cell{7}{2} = {c=4}{},
         vlines,
+        hlines,
         hline{1,4,7-8} = {-}{1pt},
-        hline{2-3,5-6} = {2-5}{},
         column{1} = {cmd=\bfseries},
     }
     1层             & 麦西麦乐              & 包子水饺$^㊐$        & 牛肉板面 & 兰州拉面         \\
@@ -63,8 +63,8 @@
         cell{4}{1} = {r=2}{},
         cell{4}{2} = {r=2}{},
         vlines,
+        hlines,
         hline{1,4,6} = {-}{1pt},
-        hline{2,5} = {3-6}{},
         hline{3} = {2-6}{0.8pt},
         column{1} = {cmd=\bfseries},
     }
@@ -83,8 +83,8 @@
     {
         cells = {c,m},
         hline{1,3}= {-}{1pt},
-        hline{2} = {-}{},
         vlines,
+        hlines,
     }
     满江红   & 暖溢水饺（相对平价） & 木南王府 & 小四川烧烤           \\
     志科全驴 & 炖大鹅               & 生炖羊茬 & 幸福餐厅（平价量大）
@@ -96,7 +96,7 @@
     {
         cells = {c,m},
         hline{1-2,6}= {-}{1pt},
-        hline{3-5} = {-}{},
+        hlines,
         vlines,
         row{1} = {cmd=\bfseries},
     }
@@ -114,10 +114,10 @@
         cells = {c,m},
         cell{1}{1}={r=2}{},
         cell{3}{1}={r=2}{},
-        hline{1,3,5}= {-}{1pt},
-        hline{2} = {2-6}{},
-        hline{4} = {2-6}{0.8pt},
+        hlines,
         vlines,
+        hline{1,3,5}= {-}{1pt},
+        hline{4} = {2-6}{0.8pt},
         column{1} = {cmd=\bfseries},
     }
     食堂 & \textbf{蜜雪冰城} & 臻茶              & 沪上阿姨   & 阿水大杯茶        & 麦克风       \\
@@ -133,7 +133,7 @@
         label = {market_fuyanshan}]{
         cells = {c,m},
         hline{1-2,5}= {-}{1pt},
-        hline{3-4} = {-}{},
+        hlines,
         vlines,
         row{1} = {cmd=\bfseries},
     }
@@ -146,7 +146,8 @@
 \subsection[玩]{玩}
 \begin{enumerate}
     \item 多数同学常通过步行前往南街，有KTV、电影院等娱乐场所
-    \item 也可通过69、71、101路等公交车（北门乘坐）或13、109路等公交车（南门乘坐）前往市区（如泰华、万达、谷德茂等）游玩
+    \item 也可通过13、169、路等公交车（北门乘坐）或13、109路等公交车（南门乘坐）前往市区（如泰华、万达、谷德茂等）游玩\footnotemark
+          \footnotetext{详情公交信息与免费乘车指南参见\uline{\ref{free_bus}}部分。}
     \item 文体中心（位置参见\uline{\ref{map_fuyanshan_holistic}}）内有羽毛球馆、篮球馆（两者互斥）、健身房，还有\textbf{游泳馆}等\footnotemark
           \footnotetext{具体收费标准及预约方式见下文\uline{\ref{sports_center_book}}，开放时间见此\uline{\ref{sports_center_operating_hours}}。}
 \end{enumerate}
@@ -170,12 +171,10 @@
         cell{8-11}{3} = {c=2}{},
         cell{12}{2} = {c=2,r=2}{},
         vlines,
+        hlines,
         hline{1,3,8,12,14} = {-}{1pt},
         hline{2,10} = {2-4}{0.8pt},
-        hline{4,6-7} = {2}{},
         hline{5} = {1-2}{1pt},
-        hline{13} = {4}{},
-        hline{9,11} = {3-4}{},
     }
     开放项目 & 春夏季营业时间                                   %
     \TblrNote{1}                                                \\
@@ -210,8 +209,8 @@
         cell{4}{1} = {r=2}{},
         row{1} = {font=\bfseries},
         vlines,
+        hlines,
         hline{1-2,4,6} = {-}{1pt},
-        hline{3,5} = {2-3}{},
     }
     类别     & 地点           & 显示名称                 \\
     美团优选 & 中和移动营业厅 & 山二医美团优选移动       \\
@@ -238,8 +237,8 @@
         cell{5}{1} = {r=16}{},
         cell{21}{1} = {r=5}{},
         vlines,
+        hlines,
         hline{1-2,5,21,26} = {-}{1pt},
-        hline{3-20,22-25} = {2-4}{},
     }
     地点     & 习惯称呼                & 位置           & 功能                                     \\
     中和广场 & 学生印务                & A106对过       & 打印复印扫描、\textbf{复习资料、二手书}  \\
