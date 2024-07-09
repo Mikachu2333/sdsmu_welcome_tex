@@ -4,25 +4,26 @@ name: Build Preview
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
-    branches: ["master"]
+    branches:
+      - master
     paths-ignore:
       - ".github/**"
       - ".gitignore"
-      - "**.md"
-      - "LICENSE**"
+      - "**/*.md"
+      - "LICENSE"
   pull_request:
-    branches: ["master"]
+    branches:
+      - master
     paths-ignore:
       - ".github/**"
       - ".gitignore"
-      - "**.md"
-      - "LICENSE**"
-    types:
-      - opened
+      - "**/*.md"
+      - "LICENSE"
+    type:
       - synchronize
-
+      - opened
+      - reopened
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
