@@ -5,6 +5,7 @@
 
 % 导入所需的package
 \documentclass[a4paper,twoside,onecolumn,12pt,fontset=none]{ctexrep}%ctexreport文档类，fontset=none避免字体冲突警告
+%\usepackage{fontspec}%在使用Overleaf编译时取消此行以使字体设置生效，详见ReadMe文件结尾的说明
 \usepackage{bxtexlogo}%LaTeX logo（禁止换用hvlogos，因其会重定义部分字体导致报错）
 \usepackage{fancyhdr,titlesec}%标题、脚注格式
 \usepackage{indentfirst,ulem,xcolor}%段落、文字格式
@@ -43,9 +44,9 @@
 \bxtexlogoimport{LaTeXe}
 
 % 重定义文章字体为梦源宋体（不使用思源宋体的原因是思源的行高过高）
-\setmainfont[BoldFont=Dream Han Serif CN W20]{Dream Han Serif CN W7}
-\setCJKmainfont{Dream Han Serif CN W7}[BoldFont=Dream Han Serif CN W20]
-\setCJKsansfont[BoldFont=Dream Han Serif CN W20]{Dream Han Serif CN W7}
+\setmainfont[BoldFont=Dream Han Serif CN W20.ttf]{Dream Han Serif CN W7.ttf}
+\setCJKmainfont{Dream Han Serif CN W7.ttf}[BoldFont=Dream Han Serif CN W20.ttf]
+\setCJKsansfont[BoldFont=Dream Han Serif CN W20.ttf]{Dream Han Serif CN W7.ttf}
 
 % 段间距与行间距重设定
 \setlength{\parskip}{.75ex plus 5pt minus 8pt}
