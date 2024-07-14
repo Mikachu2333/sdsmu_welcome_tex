@@ -57,7 +57,7 @@ jobs:
             ./*.otf
             ./*.ttf
 
-      - name: Rename PDF file with UTC+8
+      - name: Get Time GMT+08:00
         shell: pwsh
         run: |
           $NowTime = [int32](Get-Date -UFormat "%s")
@@ -67,7 +67,7 @@ jobs:
           $Formated = (Get-Date -UnixTimeSeconds $Result -UFormat "%Y-%m-%d_%H.%M.%S").ToString()
           echo $Formated
 
-          Rename-Item -Path ./main.pdf -NewName ($Formated + ".pdf")
+          %Rename-Item -Path ./main.pdf -NewName ($Formated + ".pdf")
 
           "{TIME_FORMATTED}={$Formated}" | Out-File -FilePath $env:GITHUB_ENV -Append
       - name: Upload PDF file
