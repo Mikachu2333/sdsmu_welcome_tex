@@ -11,6 +11,7 @@ on:
       - ".github/**"
       - ".gitignore"
       - "**/*.md"
+      - "README.md"
       - "LICENSE"
   pull_request:
     branches:
@@ -19,6 +20,7 @@ on:
       - ".github/**"
       - ".gitignore"
       - "**/*.md"
+      - "README.md"
       - "LICENSE"
     type:
       - synchronize
@@ -55,8 +57,21 @@ jobs:
             ./*.otf
             ./*.ttf
 
+      - name: Rename PDF file with UTC+8
+        shell: pwsh
+        run: |
+          $NowTime = [int32](Get-Date -UFormat "%s")
+          $Zone = [int16](Get-Date -UFormat "%Z").ToString()
+          $NeedTime = (8 - $Zone) * 60 * 60
+          $Result = $NowTime - $NeedTime
+          $Formated = (Get-Date -UnixTimeSeconds $Result -UFormat "%Y-%m-%d_%H.%M.%S").ToString()
+          echo $Formated
+
+          Rename-Item -Path ./main.pdf -NewName ($Formated + ".pdf")
+
+          "{TIME_FORMATTED}={$Formated}" | Out-File -FilePath $env:GITHUB_ENV -Append
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
-          name: PDF
+          name: $TIME_FORMATTED
           path: main.pdf
