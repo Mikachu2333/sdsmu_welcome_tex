@@ -73,5 +73,5 @@ jobs:
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
-          name: $TIME_FORMATTED
+          name: ${{TIME_FORMATTED}}
           path: main.pdf
