@@ -60,13 +60,21 @@ jobs:
           $NeedTime = (8 - $Zone) * 60 * 60
           $Result = $NowTime - $NeedTime
           $Formated = (Get-Date -UnixTimeSeconds $Result -UFormat "%Y-%m-%d_%H.%M.%S").ToString()
-          echo $Formated
 
           #Rename-Item -Path ./main.pdf -NewName ($Formated + ".pdf")
 
-          "{TIME_FORMATTED}={$Formated}" | Out-File -FilePath $env:GITHUB_ENV -Append
+          "TIME_FORMATTED=$Formated" | Out-File -FilePath $env:GITHUB_ENV -Append
+
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
-          name: ${{TIME_FORMATTED}}
+          name: ${{ env.TIME_FORMATTED }}
           path: main.pdf
+
+      - name: Add summary
+        if: success()
+        shell: pwsh
+        run: |
+          $summary = "文件编译时间：${{ env.TIME_FORMATTED }}"
+
+          echo $summary >> $Env:GITHUB_STEP_SUMMARY

@@ -14,11 +14,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      TIME_FORMATTED: None
 
     steps:
       - uses: actions/checkout@v4
+        
       - name: New Pdf
         shell: pwsh
         run: |
@@ -27,8 +26,6 @@ jobs:
       - name: Get Time GMT+08:00
         shell: pwsh
         run: |
-          echo "${{ env.TIME_FORMATTED }}"
-
           $NowTime = [int32](Get-Date -UFormat "%s")
           $Zone = [int16](Get-Date -UFormat "%Z").ToString()
           $NeedTime = (8 - $Zone) * 60 * 60
@@ -37,19 +34,18 @@ jobs:
 
           #Rename-Item -Path ./main.pdf -NewName ($Formated + ".pdf")
 
-          "{TIME_FORMATTED}={$Formated}" | Out-File -FilePath $env:GITHUB_ENV -Append
-
-          echo "${{ env.TIME_FORMATTED }}"
+          "TIME_FORMATTED=$Formated" | Out-File -FilePath $env:GITHUB_ENV -Append
+          
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
-          name: ${{TIME_FORMATTED}}
-          path: *.pdf
+          name: ${{ env.TIME_FORMATTED }}
+          path: main.pdf
 
       - name: Add summary
         if: success()
         shell: pwsh
         run: |
-          $summary = "${{ env.TIME_FORMATTED }}"
+          $summary = "文件编译时间：${{ env.TIME_FORMATTED }}"
 
           echo $summary >> $Env:GITHUB_STEP_SUMMARY
