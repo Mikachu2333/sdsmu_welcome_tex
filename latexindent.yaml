@@ -1,7 +1,13 @@
 modifyLineBreaks:
+  condenseMultipleBlankLinesInto: 2
   optionalArguments:
     tblr:
-      OptArgBodyStartsOnOwnLine: 1 # -1,0,1,2,3,4
+      OptArgBodyStartsOnOwnLine: 1
+lookForAlignDelims:
+  tblr:
+    alignFinalDoubleBackSlash: 1
+    #dontMeasure: largest
+    multiColumnGrouping: 1
 fineTuning:
   keyEqualsValuesBracesBrackets:
     name: |-
