@@ -56,6 +56,7 @@ jobs:
           $NeedTime = (8 - $Zone) * 60 * 60
           $Result = $NowTime - $NeedTime
           $Formated = (Get-Date -UnixTimeSeconds $Result -UFormat "%Y-%m-%d_%H.%M.%S").ToString()
+          $Formated
 
           #Rename-Item -Path ./main.pdf -NewName ($Formated + ".pdf")
 
