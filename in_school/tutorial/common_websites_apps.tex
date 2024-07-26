@@ -94,7 +94,6 @@
         \subsection[手机app]{手机app}
         \centering
         \begin{tblr}[
-            long,
             theme = {no-caption},
             note{1} = {详见下方的课程表软件对比\uline{\ref{schedule_app}}},
             ]{
@@ -117,7 +116,6 @@
         \subsection[小程序]{小程序}
         \centering
         \begin{tblr}[
-            long,
             theme = {no-caption},
             ]{
             cells={c,m},
@@ -141,46 +139,50 @@
 }
 
 \subsection[微信公众号]{微信公众号}
-\begin{tblr}[
-    long,
-    theme = {no-caption},
-    ]{
-    width=0.6\linewidth,
-    colspec={X[1]X[1]},
-    cells={c,m},
-    cell{7}{1} = {c=2}{},
-    vlines,
-    hlines,
-    hline{1,7-8,10} = {-}{1pt},
-    hline{4} = {-}{0.8pt},
-    }
-    山东第二医科大学                  & ～报           \\
-    ～学生之家（\textbf{新生预报到}） & ～智慧校园     \\
-    ～财务处（\textbf{学费缴费}）     & ～学生会       \\
-    山二医文体中心                    & ～图管会       \\
-    青春～                            & ～就业服务     \\
-    平安～                            & ～学工助手     \\
-    青春山东（青年大学习）            &                \\
-    对分易                            & 长江雨课堂     \\
-    流云海印（自助打印）              & 海享租（空调）
-\end{tblr}
+\begin{table}
+    \centering
+    \begin{tblr}[
+        theme = {no-caption},
+        ]{
+        width=0.6\linewidth,
+        colspec={X[1]X[1]},
+        cells={c,m},
+        cell{7}{1} = {c=2}{},
+        vlines,
+        hlines,
+        hline{1,7-8,10} = {-}{1pt},
+        hline{4} = {-}{0.8pt},
+        }
+        山东第二医科大学                  & ～报           \\
+        ～学生之家（\textbf{新生预报到}） & ～智慧校园     \\
+        ～财务处（\textbf{学费缴费}）     & ～学生会       \\
+        山二医文体中心                    & ～图管会       \\
+        青春～                            & ～就业服务     \\
+        平安～                            & ～学工助手     \\
+        青春山东（青年大学习）            &                \\
+        对分易                            & 长江雨课堂     \\
+        流云海印（自助打印）              & 海享租（空调）
+    \end{tblr}
+\end{table}
 
 \subsection[常用课程表对比]{常用课程表对比}
 \label{schedule_app}
-\begin{tblr}[
-        long,
-        theme = {no-caption},
-    ]{
-        cells = {c,m},
-        row{1} = {cmd=\bfseries},
-        rowhead=1,
-        vlines,
-        hlines,
-        hline{1-2,5} = {-}{1pt},
-    }
-    程序名称     & 广告 & 难易程度 & 使用人数 & 各类功能                           \\
-    Wakeup课程表 & 无   & 中等     & 中等     & 分享，教务导入，桌面小工具，调课等 \\
-    超级课程表   & 有   & 容易     & 多       & 同上，另有“蹭课”等功能，部分需会员 \\
-    山二医app    & 无   & 容易     & 较少     & 极少，但与官方教务系统同步，不折腾
-\end{tblr}
+\begin{table}
+    \centering
+    \begin{tblr}[
+            theme = {no-caption},
+        ]{
+            cells = {c,m},
+            row{1} = {cmd=\bfseries},
+            rowhead=1,
+            vlines,
+            hlines,
+            hline{1-2,5} = {-}{1pt},
+        }
+        程序名称     & 广告 & 难易程度 & 使用人数 & 各类功能                           \\
+        Wakeup课程表 & 无   & 中等     & 中等     & 分享，教务导入，桌面小工具，调课等 \\
+        超级课程表   & 有   & 容易     & 多       & 同上，另有“蹭课”等功能，部分需会员 \\
+        山二医app    & 无   & 容易     & 较少     & 极少，但与官方教务系统同步，不折腾
+    \end{tblr}
+\end{table}
 
