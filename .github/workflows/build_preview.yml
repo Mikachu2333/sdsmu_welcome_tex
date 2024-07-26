@@ -22,10 +22,6 @@ on:
       - "**/*.md"
       - "README.md"
       - "LICENSE"
-    type:
-      - synchronize
-      - opened
-      - reopened
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 

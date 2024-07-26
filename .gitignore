@@ -28,5 +28,8 @@
 **latexindent*
 *.bak*
 
+# test.ps1
+test.ps1
+
 # pdf
 main.pdf
