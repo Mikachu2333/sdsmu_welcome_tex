@@ -51,12 +51,8 @@ jobs:
       - name: Get Time GMT+08:00
         shell: pwsh
         run: |
-          $NowTime = [int32](Get-Date -UFormat "%s")
-          $Zone = [int16](Get-Date -UFormat "%Z").ToString()
-          $NeedTime = (8 - $Zone) * 60 * 60
-          $Result = $NowTime - $NeedTime
-          $Formated = (Get-Date -UnixTimeSeconds $Result -UFormat "%Y-%m-%d_%H.%M.%S").ToString()
-          $Formated
+          $GMT_p8_Time = [int32](Get-Date -UFormat "%s") + 28800
+          $Formated = (Get-Date -UnixTimeSeconds $GMT_p8_Time -UFormat "%Y-%m-%d_%H.%M.%S").ToString()
 
           #Rename-Item -Path ./main.pdf -NewName ($Formated + ".pdf")
 
