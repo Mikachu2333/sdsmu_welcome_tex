@@ -23,8 +23,7 @@
 
 \section[效果优化]{效果优化}
 \subsection[文字显示]{文字显示}
-自豪地使用\href{https://www.maoken.com/freefonts/15311.html}{梦源宋体}（
-\href{https://github.com/adobe-fonts/source-han-serif}{思源宋体}的改版，降低了文字的行高）进行排版，作为宋体糟糕显示效果的替代品。
+自豪地使用\href{https://www.maoken.com/freefonts/15311.html}{梦源宋体}（\href{https://github.com/adobe-fonts/source-han-serif}{思源宋体}的改版，降低了文字的行高）进行排版，作为宋体糟糕显示效果的替代品。
 
 \subsection[图片压缩]{图片压缩}
 在地图的制作与指南的发布过程中，因地图清晰度过高、图像画布过大导致的图片文件过大\footnotemark 的问题始终困扰着我。在反复研究后，我通过非文字区域的马赛克化、复用色彩、更换 $MozJpeg$ 图片算法、图片文字矢量化等多种方法尽力减小图像体积，力求在地图“保真”的前提下缩小图片体积使之易于传播。最终，我将各地图以 $pdf$ 文件的形式嵌入到了本指南中，且所有地图文件总大小不超过2㎆，实现了质的飞跃。
@@ -41,8 +40,8 @@
 
 \subsection[编辑]{编辑}
 为避免文章引用混乱、格式在不同Office版本上不断改变，本文章全部使用\TeX 语言撰写，使任何电脑都能在同时使用\href{https://tug.org/texlive}{Tex Live套件}与\href{https://code.visualstudio.com}{VSCode编辑器}\footnotemark 的情况下获得完全相同的编辑体验（\sout{虽然相较Word编辑的入门门槛也高了亿点点}）。最终发布时通过 $latexmk$ 自动调用 \XeLaTeX 多次编译以获得 $pdf$ 文件，保证无论是纸质版还是电子版都能在相同的格式下进行阅读。
-2024年8月1日，为优化显示效果更换为 \LuaLaTeX 编译。
 \footnotetext{安装与编辑说明详见\href{https://gitee.com/LinkChou/sdsmu_welcome_tex/blob/master/README.md}{README.md}。}
+2024年8月1日，为优化显示效果更换为 \LuaLaTeX 编译。
 
 \section[实际应用]{实际应用}
 最后，特别感谢刘书记，在他的支持下，大多数临床医学院2023级新生在入学前通览了本文，避免了众多常见错误的再犯，显著减少了因使用违规电支持器导致的停电次数，极大地降低了学生因不熟悉校园而产生的各类问题的发生率！
