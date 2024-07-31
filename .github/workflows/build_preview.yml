@@ -37,7 +37,7 @@ jobs:
         with:
           docker_image: ghcr.io/xu-cheng/texlive-full:20240501
           root_file: main.tex
-          latexmk_use_xelatex: true
+          latexmk_use_lualatex: true
           latexmk_shell_escape: true
           args: |
             -synctex=1 

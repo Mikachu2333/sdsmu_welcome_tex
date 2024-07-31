@@ -1,5 +1,5 @@
 % !TeX encoding = UTF-8
-% !TEX TS-program = xelatex
+% !TEX TS-program = lualatex
 
 % 山东第二医科大学入学与生活指南 © 2023-2024 by LinkChou is licensed under CC BY-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0 . Chinese version: https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans .
 
@@ -8,14 +8,13 @@
 %\usepackage{fontspec}%在使用Overleaf编译时取消此行以使字体设置生效，详见ReadMe文件结尾的说明
 \usepackage{bxtexlogo}%LaTeX logo（禁止换用hvlogos，因其会重定义部分字体导致报错）
 \usepackage{fancyhdr,titlesec}%标题、脚注格式
-\usepackage{indentfirst,ulem,xcolor}%段落、文字格式
+\usepackage{ulem,xcolor}%段落、文字格式
 \usepackage{graphicx}%插入图片
 \usepackage{float}%图表位置，如表格过长致横向排版已不可能，应加用adjustboxs宏包排版旋转表格
 \usepackage{tabularray}%表格排版
 \usepackage{enumitem}%列表排版
 \usepackage[a4paper, hmargin=1.5cm, top=1.5cm, bottom=2cm, headheight=0pt, ignorehead]{geometry}%页边距与排版
-\usepackage[final=true, colorlinks, hidelinks, bookmarks, bookmarksnumbered=true, allbordercolors={0 0 0}, pdfborderstyle={/S/U/W 1}]{hyperref}%超链接
-%下一步计划使用hyperref全面代替ulem（参数：allbordercolors={0 0 0},pdfborderstyle={/S/U/W 1}）
+\usepackage[bookmarksnumbered=true, hidelinks, allbordercolors={0 0 0}, pdfborderstyle={/S/U/W 1}]{hyperref}%超链接
 \usepackage{texosquery}%获取秒数及时间
 \usepackage{datetime2}%扉页基本时间及格式
 %\usepackage{showframe}%显示页面布局与边框，仅Preview版本排查错误
@@ -41,6 +40,7 @@
 }
 
 % 重定义部分logo符号以免冲突
+\bxtexlogoimport{LuaLaTeX}
 \bxtexlogoimport{XeLaTeX}
 \bxtexlogoimport{LaTeXe}
 

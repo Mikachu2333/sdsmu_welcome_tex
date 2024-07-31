@@ -54,7 +54,7 @@
     "latex-workshop.intellisense.file.base": "both",
     "latex-workshop.intellisense.package.enabled": true,
     "latex-workshop.intellisense.triggers.latex": [],
-    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.autoClean.run": "onFailed",
     "latex-workshop.latex.build.clearLog.everyRecipeStep.enabled": false,
     "latex-workshop.latex.clean.fileTypes": [
         "*.acn",
@@ -79,8 +79,14 @@
         "*.toc",
         "*.xdv"
     ],
-    "latex-workshop.latex.recipe.default": "lastUsed",
+    "latex-workshop.latex.recipe.default": "first",
     "latex-workshop.latex.recipes": [
+        {
+            "name": "LaTeXmkLua",
+            "tools": [
+                "latexmklua"
+            ]
+        },
         {
             "name": "LaTeXmkXe",
             "tools": [
@@ -106,8 +112,6 @@
             "name": "xelatex"
         },
         {
-            "name": "latexmkxe",
-            "command": "latexmk",
             "args": [
                 "-synctex=1",
                 "-interaction=nonstopmode",
@@ -116,7 +120,22 @@
                 "-file-line-error",
                 "-xelatex",
                 "%DIR%/main.tex"
-            ]
+            ],
+            "command": "latexmk",
+            "name": "latexmkxe"
+        },
+        {
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-shell-escape",
+                "-halt-on-error",
+                "-file-line-error",
+                "-lualatex",
+                "%DIR%/main.tex"
+            ],
+            "command": "latexmk",
+            "name": "latexmklua"
         }
     ],
     "latex-workshop.latexindent.args": [
@@ -155,8 +174,8 @@
 - 若出现 `Overfull` 或 `Underfull` 警告，请务必进行修正，必要时使用最小工作示例（`MWE`）进行排查
 - 文章不应当出现任何 `Warning` 或 `Error`
 - 特殊强调事项使用 `\textbf{\uuline{强调}}` 排版，因 `\uuline{}` 无法自动换行，如因句子长度超限需要换行，请编译和根据输出的文档手动调整为如下格式 `\textbf{\uuline{强调内容\\换行后强调内容}}`
-- 所有链接使用 `\uline\(h)ref{链接}` 排版
-- 如需对链接进行强调，请使用 `\textbf{\uline{\(h)ref{强调链接}}}` 排版
+- 所有链接使用 `\(h)ref{链接}` 排版
+- 如需对链接进行强调，请使用 `\textbf{{\(h)ref{强调链接}}` 排版
 - 彩色文字排版时请使用 `\textcolor{常规颜色}{文字}` 或 `\colored{R值}{G值}{B值}{文字}` 排版
   - **彩色文字不应当被滥用**
 - 表格排版说明
@@ -176,5 +195,6 @@
 
 #### 关于 Overeaf 编译的特别提醒
 - 因本文档附带多个图像且使用了自定义字体导致编译时间达到免费版上限，故需分节编译（此处不做详述）
-- 如需编译前请将Overeaf的编译设置调整为 `XeLaTeX` 模式，且根据注释编辑 `main.tex` 文件
-  - 注：根据《CTeX 宏集手册》第12节中关于“xeCJK 宏集的依赖”的相关描述，OverLeaf本应在使用 `ctexrep` 文档类时自动引入本宏包而无须用户操心，但实际上出现了本问题……
+- 如需编译前请将Overeaf的编译设置调整为 `LuaLaTeX` 模式，且根据注释编辑 `main.tex` 文件
+  - 注（已失效）：根据《CTeX 宏集手册》第12节中关于“xeCJK 宏集的依赖”的相关描述，OverLeaf本应在使用 `ctexrep` 文档类时自动引入本宏包而无须用户操心，但实际上出现了本问题……
+  - 大概就是上面那样，检查一下依赖，都import一下就好了
