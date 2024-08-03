@@ -4,6 +4,7 @@
 % 山东第二医科大学入学与生活指南 © 2023-2024 by LinkChou is licensed under CC BY-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0 . Chinese version: https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans .
 
 % 导入所需的package
+\DocumentMetadata{lang=zh-CN}%hook引入与语言设置 testphase=new-or,
 \documentclass[a4paper,twoside,onecolumn,12pt,fontset=none]{ctexrep}%ctexreport文档类，fontset=none避免字体冲突警告
 %\usepackage{fontspec}%在使用Overleaf编译时取消此行以使字体设置生效，详见ReadMe文件结尾的说明
 \usepackage{bxtexlogo}%LaTeX logo（禁止换用hvlogos，因其会重定义部分字体导致报错）
@@ -14,7 +15,7 @@
 \usepackage{tabularray}%表格排版
 \usepackage{enumitem}%列表排版
 \usepackage[a4paper, hmargin=1.5cm, top=1.5cm, bottom=2cm, headheight=0pt, ignorehead]{geometry}%页边距与排版
-\usepackage[bookmarksnumbered=true, hidelinks, allbordercolors={0 0 0}, pdfborderstyle={/S/U/W 1}]{hyperref}%超链接
+\usepackage[bookmarksnumbered=true, allbordercolors=black, hidelinks]{hyperref}%超链接
 \usepackage{texosquery}%获取秒数及时间
 \usepackage{datetime2}%扉页基本时间及格式
 %\usepackage{showframe}%显示页面布局与边框，仅Preview版本排查错误
@@ -89,6 +90,18 @@
 \DefTblrTemplate{contfoot-text}{default}{续下页}
 \DefTblrTemplate{conthead-text}{default}{（续）}
 
+% 重定义超链接与引用表现样式
+\newcommand{\uhref}[2]{%
+\hypersetup{pdfborderstyle={/S/U/W 1}}%
+\href{#1}{#2}%
+\hypersetup{hidelinks}%
+}
+\newcommand{\uref}[2]{%
+\hypersetup{pdfborderstyle={/S/U/W 1}}%
+\hyperref[#1]{#2}%
+\hypersetup{hidelinks}%
+}
+
 % 设置校徽命令
 \newcommand{\BackgroundPic}{
     \noindent\parbox{\paperwidth}{
@@ -132,7 +145,7 @@
 \input{in_school/life/security.tex}%安全
 
 \input{in_school/life/study.tex}%学习方面
-\input{in_school/further_education/employment.tex}%就业创业
+\input{in_school/further_education/employment.tex}%就业指引
 \input{in_school/further_education/competition.tex}%???与竞赛
 
 \input{in_school/tutorial/content_generic_tutorials.tex}%通用指南目录
