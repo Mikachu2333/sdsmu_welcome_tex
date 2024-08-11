@@ -54,7 +54,7 @@
     "latex-workshop.intellisense.file.base": "both",
     "latex-workshop.intellisense.package.enabled": true,
     "latex-workshop.intellisense.triggers.latex": [],
-    "latex-workshop.latex.autoClean.run": "onFailed",
+    "latex-workshop.latex.autoClean.run": "onSucceeded",
     "latex-workshop.latex.build.clearLog.everyRecipeStep.enabled": false,
     "latex-workshop.latex.clean.fileTypes": [
         "*.acn",
@@ -69,6 +69,7 @@
         "*.glg",
         "*.glo",
         "*.gls",
+        "*.gz",
         "*.idx",
         "*.ind",
         "*.ist",
@@ -82,15 +83,9 @@
     "latex-workshop.latex.recipe.default": "first",
     "latex-workshop.latex.recipes": [
         {
-            "name": "LaTeXmkLua",
+            "name": "LaTeXmk",
             "tools": [
-                "latexmklua"
-            ]
-        },
-        {
-            "name": "LaTeXmkXe",
-            "tools": [
-                "latexmkxe"
+                "latexmk"
             ]
         },
         {
@@ -118,24 +113,11 @@
                 "-shell-escape",
                 "-halt-on-error",
                 "-file-line-error",
-                "-xelatex",
-                "%DIR%/main.tex"
-            ],
-            "command": "latexmk",
-            "name": "latexmkxe"
-        },
-        {
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-shell-escape",
-                "-halt-on-error",
-                "-file-line-error",
                 "-lualatex",
                 "%DIR%/main.tex"
             ],
             "command": "latexmk",
-            "name": "latexmklua"
+            "name": "latexmk"
         }
     ],
     "latex-workshop.latexindent.args": [
