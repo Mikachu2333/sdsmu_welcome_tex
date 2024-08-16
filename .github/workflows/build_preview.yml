@@ -31,13 +31,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        
+      - uses: actions/setup-java@v4 #设置jre依赖，以获取精确时间
+        with:
+          distribution: "temurin"
+          java-version: "21" #理论上8就够了
 
-      - name: Github Action for LaTeX
+      - name: Build with LaTeXmk #编译准备
         uses: xu-cheng/latex-action@3.2.0
         with:
           docker_image: ghcr.io/xu-cheng/texlive-full:20240501
           root_file: main.tex
-          latexmk_use_lualatex: true
           latexmk_shell_escape: true
           args: |
             -synctex=1 
@@ -48,7 +52,7 @@ jobs:
             ./*.otf
             ./*.ttf
 
-      - name: Get Time GMT+08:00
+      - name: Get Time GMT+08:00 #获取系统时间
         shell: pwsh
         run: |
           $NeedZone = [Int16]8
@@ -64,13 +68,13 @@ jobs:
 
           "TIME_FORMATTED=$Formated" | Out-File -FilePath $env:GITHUB_ENV -Append
 
-      - name: Upload PDF file
+      - name: Upload PDF file #上传pdf文件
         uses: actions/upload-artifact@v4
         with:
           name: ${{ env.TIME_FORMATTED }}
           path: main.pdf
 
-      - name: Add summary
+      - name: Add summary #添加编译时间到Summary
         if: success()
         shell: pwsh
         run: |
