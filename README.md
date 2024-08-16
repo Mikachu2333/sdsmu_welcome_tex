@@ -48,6 +48,8 @@
 
 <details><summary>VSCode配置</summary>
 
+  **注：** 如使用本配置文件则必须在latexmkrc文件中指定编译器
+  
 ```json
     "latex-workshop.bibtex-fields.sort.enabled": true,
     "latex-workshop.bibtex-format.sort.enabled": true,
@@ -113,7 +115,6 @@
                 "-shell-escape",
                 "-halt-on-error",
                 "-file-line-error",
-                "-lualatex",
                 "%DIR%/main.tex"
             ],
             "command": "latexmk",
@@ -129,7 +130,6 @@
     ],
     "latex-workshop.latexindent.path": "latexindent",
     "latex-workshop.message.error.show": false,
-    "latex-workshop.message.information.show": true,
     "latex-workshop.message.warning.show": false,
     "latex-workshop.showContextMenu": true,
     "latex-workshop.synctex.afterBuild.enabled": true,
