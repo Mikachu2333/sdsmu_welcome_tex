@@ -14,7 +14,7 @@
 \usepackage{tabularray}%表格排版
 \usepackage{enumitem}%列表排版
 \usepackage[a4paper, hmargin=1.5cm, top=1.5cm, bottom=2cm, headheight=0pt, ignorehead]{geometry}%页边距与排版
-\usepackage[bookmarksnumbered=true, allbordercolors=black, hidelinks]{hyperref}%超链接
+\usepackage[bookmarksnumbered=true, hidelinks]{hyperref}%超链接
 \usepackage{texosquery}%获取秒数及时间
 \usepackage{datetime2}%扉页基本时间及格式
 %\usepackage{showframe}%显示页面布局与边框，仅Preview版本排查错误
@@ -91,12 +91,12 @@
 
 % 重定义超链接与引用表现样式
 \newcommand{\uhref}[2]{%
-\hypersetup{pdfborderstyle={/S/U/W 1}}%
+\hypersetup{allbordercolors=black,pdfborderstyle={/S/U/W 1}}%
 \href{#1}{#2}%
 \hypersetup{hidelinks}%
 }
 \newcommand{\uref}[2]{%
-\hypersetup{pdfborderstyle={/S/U/W 1}}%
+\hypersetup{allbordercolors=black,pdfborderstyle={/S/U/W 1}}%
 \hyperref[#1]{#2}%
 \hypersetup{hidelinks}%
 }
