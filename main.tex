@@ -8,7 +8,8 @@
 %\usepackage{fontspec}%在使用Overleaf编译时取消此行以使字体设置生效，详见ReadMe文件结尾的说明
 \usepackage{bxtexlogo}%LaTeX logo（禁止换用hvlogos，因其会重定义部分字体导致报错）
 \usepackage{fancyhdr,titlesec}%标题、脚注格式
-\usepackage{ulem,xcolor}%段落、文字格式
+\usepackage{luacolor, xcolor}%颜色
+\usepackage[soul]{lua-ul}%下划线与其他装饰
 \usepackage{graphicx}%插入图片
 \usepackage{float}%图表位置，如表格过长致横向排版已不可能，应加用adjustboxs宏包排版旋转表格
 \usepackage{tabularray}%表格排版
@@ -105,10 +106,19 @@
 
 % 重定义超链接与引用表现样式
 \newcommand{\uhref}[2]{%
-    \uline{\href{#1}{#2}}%
+    \ul{\href{#1}{#2}}%
 }
 \newcommand{\uref}[1]{%
-    \uline{\ref{#1}}%
+    \ul{\ref{#1}}%
+}
+
+% 定义下划线样式
+\newcommand{\uul}[1]{%
+  \ul[bottom=\dimexpr-.7ex+1pt\relax, height=.1ex]{%
+    \ul[top=-.7ex, height=.1ex]{%
+      #1%
+    }%
+  }%
 }
 
 % 设置校徽命令

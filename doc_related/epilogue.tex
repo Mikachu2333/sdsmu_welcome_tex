@@ -11,7 +11,7 @@
 
 因虞河校区缺少地图，故此，在2023年寒假期间本人开始着手绘制虞河校区及人民医院见习点的整体轮廓地图。在先前绘制积累的经验的帮助下，虞河校区地图于2024年3月10日正式完成。鄙人谨在此再一次向所有指导、审核与提供帮助的各位领导、教师以及同学致以诚挚的感谢！
 
-在2024年7月，为方便新生寻找实验室具体位置，本人使用 Affinity® Designer 突破性地增加了敏行楼的详细门牌号地图（虽然因为敏行楼上下楼层门牌号不对应、各门牌号排布极其杂乱而难以辨认，\sout{但有总比没有好}）。
+在2024年7月，为方便新生寻找实验室具体位置，本人使用 Affinity® Designer 突破性地增加了敏行楼的详细门牌号地图（虽然因为敏行楼上下楼层门牌号不对应、各门牌号排布极其混乱而难以辨认，\st{但有总比没有好}）。
 
 \section[指南写作]{指南写作}
 
@@ -37,10 +37,8 @@
 在2023年暑假期间，我着手使用\XeLaTeX 进行全面重构，在“庚午版 2023.7.21”在新生群发布以后，经慎重考虑，鄙人谨决定彻底放弃维护Word版本（原Word版本由“山东第二医科大学频道”接手维护），用全部精力维护LaTeX版本以保证文稿质量。最终，在2023年8月13日，LaTeX初版维护完毕，并不断跟随学校实际更新。
 
 \subsection[编辑]{编辑}
-为避免文章引用混乱、格式在不同Office版本上不断改变，本文章全部使用\LaTeX 撰写，使任何电脑都能在同时使用\uhref{https://tug.org/texlive}{Tex Live套件}与\uhref{https://code.visualstudio.com}{VSCode编辑器}\footnotemark 的情况下获得完全相同的编辑体验\footnotemark。
+为避免文章引用混乱、格式在不同Office版本上不断改变，本文章全部使用\LaTeX 撰写，使任何电脑都能在同时使用\uhref{https://tug.org/texlive}{Tex Live套件}与\uhref{https://code.visualstudio.com}{VSCode编辑器}\footnotemark 的情况下获得完全相同的编辑体验。（\st{虽然相较Word编辑的入门门槛也高了亿点点……}）
 \footnotetext{安装与编辑说明详见\uhref{https://gitee.com/LinkChou/sdsmu_welcome_tex/blob/master/README.md}{README.md}。}
-\addtocounter{footnote}{1}
-\footnotetext{\sout{虽然相较Word编辑的入门门槛也高了亿点点……}}
 
 最终发布时通过 $latexmk$ 自动调用 \XeTeX 多次编译以获得 $pdf$ 文件，保证无论是纸质版还是电子版都能在相同的格式下进行阅读。
 
