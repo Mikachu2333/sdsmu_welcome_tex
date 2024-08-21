@@ -135,23 +135,11 @@
     \textcolor[RGB]{#1,#2,#3}{#4}
 }
 
-% 时间样式重设定
-\newcommand{\CurrentCustomTime}{
-    \DTMsavenow{Compiled_time}%保存编译时间
-    \DTMfetchyear{Compiled_time}.%
-    \DTMtwodigits{\DTMfetchmonth{Compiled_time}}.%
-    \DTMtwodigits{\DTMfetchday{Compiled_time}}\quad%
-    \DTMtwodigits{\DTMfetchhour{Compiled_time}}:%
-    \DTMtwodigits{\DTMfetchminute{Compiled_time}}:%
-    \DTMtwodigits{\DTMfetchsecond{Compiled_time}}\quad%
-    GMT\DTMfetchTZhour{Compiled_time}:\DTMfetchTZminute{Compiled_time}
-}
-
 \begin{document}
 
 \input{doc_related/preface.tex}%标题、目录
 
-\input{doc_related/special_thanks.tex}%特别感谢
+%\input{doc_related/special_thanks.tex}%特别感谢
 \input{doc_related/document_introduction.tex}%前言
 
 \input{academic_calender/school_calendar.tex}%校历
@@ -169,5 +157,5 @@
 
 \input{in_school/tutorial/content_generic_tutorials.tex}%通用指南目录
 
-\input{doc_related/epilogue.tex}%后记
+%\input{doc_related/epilogue.tex}%后记
 \end{document}
