@@ -56,8 +56,10 @@
     "latex-workshop.intellisense.file.base": "both",
     "latex-workshop.intellisense.package.enabled": true,
     "latex-workshop.intellisense.triggers.latex": [],
+    "latex-workshop.latex.autoBuild.run": "onSave",
     "latex-workshop.latex.autoClean.run": "onSucceeded",
     "latex-workshop.latex.build.clearLog.everyRecipeStep.enabled": false,
+    "latex-workshop.latex.build.forceRecipeUsage": false,
     "latex-workshop.latex.clean.fileTypes": [
         "*.acn",
         "*.acr",
@@ -91,6 +93,12 @@
             ]
         },
         {
+            "name": "LuaLaTeX",
+            "tools": [
+                "lualatex"
+            ]
+        },
+        {
             "name": "XeLaTeX",
             "tools": [
                 "xelatex"
@@ -119,6 +127,18 @@
             ],
             "command": "latexmk",
             "name": "latexmk"
+        },
+        {
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-shell-escape",
+                "-halt-on-error",
+                "-file-line-error",
+                "%DIR%/main.tex"
+            ],
+            "command": "lualatex",
+            "name": "lualatex"
         }
     ],
     "latex-workshop.latexindent.args": [
