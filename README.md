@@ -53,6 +53,15 @@
 ```json
     "latex-workshop.bibtex-fields.sort.enabled": true,
     "latex-workshop.bibtex-format.sort.enabled": true,
+    "latex-workshop.formatting.latex": "latexindent",
+    "latex-workshop.formatting.latexindent.args": [
+        "-c=%DIR%/",
+        "%TMPFILE%",
+        "-m",
+        "--GCString",
+        "-l=%DIR%/latexindent.yaml"
+    ],
+    "latex-workshop.formatting.latexindent.path": "latexindent",
     "latex-workshop.intellisense.file.base": "both",
     "latex-workshop.intellisense.package.enabled": true,
     "latex-workshop.intellisense.triggers.latex": [],
@@ -141,14 +150,6 @@
             "name": "lualatex"
         }
     ],
-    "latex-workshop.latexindent.args": [
-        "-c=%DIR%/",
-        "%TMPFILE%",
-        "-m",
-        "--GCString",
-        "-l=%DIR%/latexindent.yaml"
-    ],
-    "latex-workshop.latexindent.path": "latexindent",
     "latex-workshop.message.error.show": false,
     "latex-workshop.message.warning.show": false,
     "latex-workshop.showContextMenu": true,
