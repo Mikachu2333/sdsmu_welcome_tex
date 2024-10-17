@@ -6,8 +6,8 @@ modifyLineBreaks:
 lookForAlignDelims:
   tblr:
     alignFinalDoubleBackSlash: 1
-    #dontMeasure: largest
     multiColumnGrouping: 1
+    #dontMeasure: largest
 fineTuning:
   keyEqualsValuesBracesBrackets:
     name: |-
