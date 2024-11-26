@@ -39,17 +39,19 @@
 ## 维护说明
 
 ### 安装 Tex Live
+
 请参考 [Install-LaTeX-Guide-zh-cn](http://mirrors.ctan.org/info/install-latex-guide-zh-cn/install-latex-guide-zh-cn.pdf)
 
 ### 安装 VSCode
+
 官网：<https://code.visualstudio.com/>，详细步骤略，仅附扩展配置如下可供参考
 
 请使用 `VSCode` 的 [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) 扩展进行自动格式化
 
 <details><summary>VSCode配置</summary>
 
-  **注：** 如使用本配置文件则必须在latexmkrc文件中指定编译器
-  
+**注：** 如使用本配置文件则必须在 latexmkrc 文件中指定编译器
+
 ```json
     "latex-workshop.bibtex-fields.sort.enabled": true,
     "latex-workshop.bibtex-format.sort.enabled": true,
@@ -61,7 +63,6 @@
         "--GCString",
         "-l=%DIR%/latexindent.yaml"
     ],
-    "latex-workshop.formatting.latexindent.path": "latexindent",
     "latex-workshop.intellisense.file.base": "both",
     "latex-workshop.intellisense.package.enabled": true,
     "latex-workshop.intellisense.triggers.latex": [],
@@ -158,10 +159,9 @@
     "latex-workshop.view.autoFocus.enabled": true,
     "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
     "latex-workshop.view.pdf.viewer": "browser",
-  ```
+```
 
 </details>
-
 
 ### 内容增减
 
@@ -183,31 +183,35 @@
   - **警告：彩色文字不应当被滥用**
 - 表格排版说明
   - 需排版跨页断行的表格可参考 `通用教程与常用信息汇总` → `公交信息与免费乘车指南` → `常用站点名称对应关系一览表` 与 `浮烟山校区` → `衣食购住玩与生活` → `其他常用地点`。
-  - tblr环境说明
+  - tblr 环境说明
     - 如需在表格 `tblr` 环境中多次使用脚注，请使用 `note{}={}` 并使用外部参数 `long` 传参给 `tblr` 结构，详情可参考 `浮烟山校区` → `衣食购住玩与生活` → `其他生活常用地点` 的相关排版，宏包中文译本文档 [见此](https://gitee.com/nwafu_nan/tabularray-doc-zh-cn)
     - 不是跨页的表格尽量不要使用 `long` 参数，因其会使表格外框占据的高度增加，而应使用 `\begin{table}[H]` 进行排版，使用 `long` 的好处是可以自动居中
     - `long` 参数禁止和 `table` 环境共存，且 `table` 环境需要手动居中；如必须要使用应换用 `tall` 参数
     - `caption = {}` 参数和 `label = {}` 参数只能在 `long` 型 `tblr` 下使用
     - 如非万不得已，请不要在表格中使用 `\pagebreak`；谨慎使用 `\newpage`，尽量使用 `\\*` 进行表格的换页排版
-    - 如果表格实在超出太多，可以将其旋转90°排版，请参考 `graphicx` 宏包文档的角度部分
+    - 如果表格实在超出太多，可以将其旋转 90° 排版，请参考 `graphicx` 宏包文档的角度部分
 
 ### 编译
+
 - 需要使用 `LuaTeX` 引擎编译
 - 各文件需使用 `LF` 标记进行结尾，而不是 `CRLF`，具体说明与设置办法参考网络教程
 - 需要使用 `LaTeXmk` 编译以使所有的 `\ref` 生效，且无任何 `Warning`
 - 编译需要 `JRE8` 的环境，否则无法正确获取秒数
 
 #### 关于 Overeaf 编译的特别提醒
+
 - 因本文档附带多个图像且使用了自定义字体导致编译时间达到免费版上限，故需分节编译（此处不做详述）
-- 如需编译前请将Overeaf的编译设置调整为 `LuaLaTeX` 模式，且根据注释编辑 `main.tex` 文件
-  - 注（已失效）：根据《CTeX 宏集手册》第12节中关于“xeCJK 宏集的依赖”的相关描述，OverLeaf本应在使用 `ctexrep` 文档类时自动引入本宏包而无须用户操心，但实际上出现了本问题……
+- 如需编译前请将 Overeaf 的编译设置调整为 `LuaLaTeX` 模式，且根据注释编辑 `main.tex` 文件
+  - 注（已失效）：根据《CTeX 宏集手册》第 12 节中关于“xeCJK 宏集的依赖”的相关描述，OverLeaf 本应在使用 `ctexrep` 文档类时自动引入本宏包而无须用户操心，但实际上出现了本问题……
   - 大概就是上面那样，检查一下依赖，都引入一下就好了
 
 ## 严正声明
+
 本人对且仅对**由本人发布的**、**“已通过审核的”**、**“正式版本的”**《山东第二医科大学指南》的言论负有直接责任。
 
 在本项目的衍生项目中，除指南“后记”章节“版权信息与授权相关”小节详细说明的以外，由其他维护者（贡献者）添加的内容**必须经过本人审查后方可通过**。**未经审查的内容均与本人无关，本人不对其正确性、时效性、思想情况做出任何保证**，**由其引发的任何问题也不由本人负责**，而是由负责该衍生项目的负责人负责。
 
 **此外：**
+
 1. 提出 PR（Pull Request）与 Issue 条目的作者及其个人政治观点与本人无关！
-2. 其他 Fork （衍生）分支项目的维护者及其个人政治观点与本人无关！
+2. 其他 Fork（衍生）分支项目的维护者及其个人政治观点与本人无关！
