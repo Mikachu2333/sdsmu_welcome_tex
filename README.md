@@ -63,6 +63,7 @@
         "--GCString",
         "-l=%DIR%/latexindent.yaml"
     ],
+    "latex-workshop.formatting.latexindent.path": "latexindent",
     "latex-workshop.intellisense.file.base": "both",
     "latex-workshop.intellisense.package.enabled": true,
     "latex-workshop.intellisense.triggers.latex": [],
@@ -202,7 +203,6 @@
 
 - 因本文档附带多个图像且使用了自定义字体导致编译时间达到免费版上限，故需分节编译（此处不做详述）
 - 如需编译前请将 Overeaf 的编译设置调整为 `LuaLaTeX` 模式，且根据注释编辑 `main.tex` 文件
-  - 注（已失效）：根据《CTeX 宏集手册》第 12 节中关于“xeCJK 宏集的依赖”的相关描述，OverLeaf 本应在使用 `ctexrep` 文档类时自动引入本宏包而无须用户操心，但实际上出现了本问题……
   - 大概就是上面那样，检查一下依赖，都引入一下就好了
 
 ## 严正声明
@@ -215,3 +215,12 @@
 
 1. 提出 PR（Pull Request）与 Issue 条目的作者及其个人政治观点与本人无关！
 2. 其他 Fork（衍生）分支项目的维护者及其个人政治观点与本人无关！
+
+<!---
+记录：
+1. datetime2宏包相关（1.5.7限定）：
+  如果需要在xelatex环境下使用datatime2且需要秒数及时区，必须在引用该package之前加入一句
+  `\providecommand{\pdfcreationdate}{\creationdate}`
+2. OverLeaf（已失效）：
+  根据《CTeX 宏集手册》第 12 节中关于“xeCJK 宏集的依赖”的相关描述，OverLeaf 本应在使用 `ctexrep` 文档类时自动引入本宏包而无须用户操心，但实际上出现了本问题……
+-->
