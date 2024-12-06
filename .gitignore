@@ -40,3 +40,7 @@ main.pdf
 特殊*.pdf
 *预览版.pdf
 *Preview*.pdf
+
+#vscode settings
+.vscode/*
+*.code-workspace
