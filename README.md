@@ -6,6 +6,8 @@
 
 2. 采用 `CC BY-SA 4.0` 许可证。
 
+3. 部分较为常用且长度较长的指南（如PPT指南、免费公交乘坐指南及相关信息）已被抽离并整合至 [SDSMU-Companion-Part（GitHub）](https://github.com/Mikachu2333/SDSMU-Companion-Part/)（[SDSMU-Companion-Part（Gitee）](https://gitee.com/linkchou/SDSMU-Companion-Part/)）处
+
 ## 下载
 
 ### 文档
