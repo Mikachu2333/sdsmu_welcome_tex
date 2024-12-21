@@ -6,11 +6,11 @@
 
 2. 采用 `CC BY-SA 4.0` 许可证。
 
-3. 部分较为常用且长度较长的指南（如PPT指南、免费公交乘坐指南及相关信息）已被抽离并整合至 [SDSMU-Companion-Part（GitHub）](https://github.com/Mikachu2333/SDSMU-Companion-Part/)（[SDSMU-Companion-Part（Gitee）](https://gitee.com/linkchou/SDSMU-Companion-Part/)）处
+3. 部分较为常用且长度较长的指南（如 PPT 指南、免费公交乘坐指南及相关信息）已被抽离并整合至 [SDSMU-Companion-Part（GitHub）](https://github.com/Mikachu2333/SDSMU-Companion-Part/)（[SDSMU-Companion-Part（Gitee）](https://gitee.com/linkchou/SDSMU-Companion-Part/)）处
 
 ## 下载
 
-### 文档
+### 文档与地图
 
 #### 正式版
 
@@ -18,21 +18,13 @@
   > **注意**：需要 `Google Chrome`、`Firefox`、`Edge` 等现代化的浏览器，`IE11` 等老旧浏览器可能无法正常显示。
 - 在 Gitee 仓库的“[发行版](https://gitee.com/LinkChou/sdsmu_welcome_tex/releases/latest)”下载
 - 在 GitHub 仓库的“[Releases](https://github.com/Mikachu2333/sdsmu_welcome_tex/releases/latest)”下载
+- 在[百度网盘](https://pan.baidu.com/share/init?surl=JadGDpjB50g_b7P8CgjVjQ&pwd=7v6k)中下载
+- 在[阿里云盘](https://www.alipan.com/s/5ucXThrTBn1)中下载
 
 #### Preview 版（实际内容以最新正式版为准）
 
 - 在 GitHub 仓库的“[Actions](https://github.com/Mikachu2333/sdsmu_welcome_tex/actions)”中下载最新自动编译的版本（仅含部分 Preview 版本）
 - 自行运行 `git clone` 后本地编译
-
-### 地图
-
-#### 百度网盘（电脑推荐）
-
-[https://pan.baidu.com/s/1cZpGGFIABB50u-3lst44iQ?pwd=46pa](https://pan.baidu.com/s/1cZpGGFIABB50u-3lst44iQ?pwd=46pa)
-
-#### 阿里云网盘（手机推荐）
-
-[https://www.alipan.com/s/dZMvgXwkxGp](https://www.alipan.com/s/dZMvgXwkxGp)
 
 ## 编写目的
 
