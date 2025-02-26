@@ -39,7 +39,7 @@ jobs:
           root_file: main.tex
           latexmk_shell_escape: true
           args: |
-            -d
+            -draftmode
             -synctex=1
             -interaction=nonstopmode
             -halt-on-error
