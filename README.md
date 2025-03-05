@@ -19,7 +19,7 @@
 - 在 Gitee 仓库的“[发行版](https://gitee.com/LinkChou/sdsmu_welcome_tex/releases/latest)”下载
 - 在 GitHub 仓库的“[Releases](https://github.com/Mikachu2333/sdsmu_welcome_tex/releases/latest)”下载
 - 在[百度网盘](https://pan.baidu.com/share/init?surl=JadGDpjB50g_b7P8CgjVjQ&pwd=7v6k)中下载
-- 在[阿里云盘](https://www.alipan.com/s/5ucXThrTBn1)中下载
+- 在[阿里云盘](https://www.alipan.com/s/dZMvgXwkxGp)中下载
 
 #### Preview 版（实际内容以最新正式版为准）
 
