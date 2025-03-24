@@ -46,7 +46,10 @@
 
 **注：** 如使用本配置文件则必须在 latexmkrc 文件中指定编译器
 
+在本项目文件夹根目录内新建 `.vscode` 文件夹，在其中新建 `settings.json`，将下方配置复制到 `settings.json` 内即可快速配置
+
 ```json
+{
     "latex-workshop.bibtex-fields.sort.enabled": true,
     "latex-workshop.bibtex-format.sort.enabled": true,
     "latex-workshop.formatting.latex": "latexindent",
@@ -154,6 +157,7 @@
     "latex-workshop.view.autoFocus.enabled": true,
     "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
     "latex-workshop.view.pdf.viewer": "browser",
+}
 ```
 
 </details>
