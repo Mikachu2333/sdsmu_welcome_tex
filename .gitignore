@@ -45,3 +45,4 @@ main.pdf
 .vscode/*
 *.code-workspace
 *.Zone.Identifier
+build/**

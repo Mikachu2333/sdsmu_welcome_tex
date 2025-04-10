@@ -6,11 +6,11 @@
 
 2. 采用 `CC BY-SA 4.0` 许可证。
 
-3. 部分较为常用且长度较长的指南（如 PPT 指南、免费公交乘坐指南及相关信息）已被抽离并整合至 [SDSMU-Companion-Part（GitHub）](https://github.com/Mikachu2333/SDSMU-Companion-Part/)（[SDSMU-Companion-Part（Gitee）](https://gitee.com/linkchou/SDSMU-Companion-Part/)）处
+3. 部分较为常用且长度较长的指南（如 PPT 指南、免费公交乘坐指南及相关信息、学习相关内容等）已被抽离并整合至 [SDSMU-Companion-Part（GitHub）](https://github.com/Mikachu2333/SDSMU-Companion-Part/)（[SDSMU-Companion-Part（Gitee）](https://gitee.com/linkchou/SDSMU-Companion-Part/)）处
 
 ## 下载
 
-### 文档
+### 文档与地图
 
 #### 正式版
 
@@ -18,21 +18,13 @@
   > **注意**：需要 `Google Chrome`、`Firefox`、`Edge` 等现代化的浏览器，`IE11` 等老旧浏览器可能无法正常显示。
 - 在 Gitee 仓库的“[发行版](https://gitee.com/LinkChou/sdsmu_welcome_tex/releases/latest)”下载
 - 在 GitHub 仓库的“[Releases](https://github.com/Mikachu2333/sdsmu_welcome_tex/releases/latest)”下载
+- 在[百度网盘](https://pan.baidu.com/share/init?surl=JadGDpjB50g_b7P8CgjVjQ&pwd=7v6k)中下载
+- 在[阿里云盘](https://www.alipan.com/s/dZMvgXwkxGp)中下载
 
 #### Preview 版（实际内容以最新正式版为准）
 
 - 在 GitHub 仓库的“[Actions](https://github.com/Mikachu2333/sdsmu_welcome_tex/actions)”中下载最新自动编译的版本（仅含部分 Preview 版本）
 - 自行运行 `git clone` 后本地编译
-
-### 地图
-
-#### 百度网盘（电脑推荐）
-
-[https://pan.baidu.com/s/1cZpGGFIABB50u-3lst44iQ?pwd=46pa](https://pan.baidu.com/s/1cZpGGFIABB50u-3lst44iQ?pwd=46pa)
-
-#### 阿里云网盘（手机推荐）
-
-[https://www.alipan.com/s/dZMvgXwkxGp](https://www.alipan.com/s/dZMvgXwkxGp)
 
 ## 编写目的
 
@@ -54,7 +46,10 @@
 
 **注：** 如使用本配置文件则必须在 latexmkrc 文件中指定编译器
 
+在本项目文件夹根目录内新建 `.vscode` 文件夹，在其中新建 `settings.json`，将下方配置复制到 `settings.json` 内即可快速配置
+
 ```json
+{
     "latex-workshop.bibtex-fields.sort.enabled": true,
     "latex-workshop.bibtex-format.sort.enabled": true,
     "latex-workshop.formatting.latex": "latexindent",
@@ -162,6 +157,7 @@
     "latex-workshop.view.autoFocus.enabled": true,
     "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
     "latex-workshop.view.pdf.viewer": "browser",
+}
 ```
 
 </details>
@@ -184,6 +180,7 @@
 - 如需对链接进行强调，请使用 `\textbf{\u(h)ref{强调链接}}` 排版
 - 彩色文字排版时请使用 `\textcolor{常规颜色}{文字}` 或 `\colored{R值}{G值}{B值}{文字}` 排版
   - **警告：彩色文字不应当被滥用**
+- 所有的二元比较符号（`＜`、`＞`、`≥`、`≤` 均应使用全角符号并使其与数字之间隔开，如 `测试文字 ＞ 2测试文字`）
 - 表格排版说明
   - 需排版跨页断行的表格可参考 `通用教程与常用信息汇总` → `公交信息与免费乘车指南` → `常用站点名称对应关系一览表` 与 `浮烟山校区` → `衣食购住玩与生活` → `其他常用地点`。
   - tblr 环境说明

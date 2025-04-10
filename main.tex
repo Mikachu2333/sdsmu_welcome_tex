@@ -1,6 +1,6 @@
 % !TeX encoding = UTF-8 Unicode
 
-% 山东第二医科大学入学与生活指南 © 2023-2024 by LinkChou is licensed under CC BY-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0 . Chinese version: https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans .
+% 山东第二医科大学入学与生活指南 © 2023-2025 by LinkChou is licensed under CC BY-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0 . Chinese version: https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans .
 
 % 导入所需的package
 \DocumentMetadata{lang=zh-CN,pdfversion=1.7}%hook引入与语言设置
@@ -52,10 +52,11 @@
 \bxtexlogoimport{XeLaTeX}
 \bxtexlogoimport{XeTeX}
 
-% 重定义文章字体为梦源宋体（不使用思源宋体的原因是思源的行高过高）
-\setmainfont[CharacterWidth=Proportional,BoldFont=Dream Han Serif CN W20.ttf]{Dream Han Serif CN W7.ttf}
-\setCJKmainfont{Dream Han Serif CN W7.ttf}[BoldFont=Dream Han Serif CN W20.ttf]
-\setCJKsansfont[BoldFont=Dream Han Serif CN W20.ttf]{Dream Han Serif CN W7.ttf}
+% 重定义文章字体为Noto Serif CJK SC
+\setmainfont[CharacterWidth=Proportional,BoldFont=NotoSerifCJKsc-Bold.otf]{NotoSerifCJKsc-Regular.otf}
+\setCJKmainfont{NotoSerifCJKsc-Regular.otf}[BoldFont=NotoSerifCJKsc-Bold.otf]
+\setCJKsansfont[BoldFont=NotoSerifCJKsc-Bold.otf]{NotoSerifCJKsc-Regular.otf}
+\setCJKmonofont[BoldFont=NotoSerifCJKsc-Bold.otf]{NotoSerifCJKsc-Regular.otf}
 
 % 段间距与行间距重设定
 \setlength{\parskip}{.75ex plus 5pt minus 8pt}
@@ -142,6 +143,7 @@
 
 \input{doc_related/preface.tex}%标题、目录
 
+\input{doc_related/special_thanks.tex}%特别感谢
 \input{doc_related/document_introduction.tex}%前言
 
 \input{academic_calender/school_calendar.tex}%校历

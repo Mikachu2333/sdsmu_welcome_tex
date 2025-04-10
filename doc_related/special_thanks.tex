@@ -1,0 +1,87 @@
+% 特别感谢（尤其感谢我自己）
+\chapter*{特别感谢}
+% 使用表格排版感谢
+\begin{table}[H]
+    \centering
+    \begin{minipage}[c][76ex][t]{.5\linewidth}%高度只影响minipage结束后下面的文字开始排版的位置，无论minipage内的内容是否超限都不会提示，所以只需关注底下的图片排版即可
+        \centering
+        \begin{tblr}[
+                tall,
+                theme = {no-caption},
+                note{$\dag$} = {本栏内所有资料均已获编委（主编）授权。},
+            ]{
+                vline{2} = {.4pt},%手动设置中间线当作隔断，线需稍宽才能让左右两栏的边线重叠看不出来
+                cells={c,m},
+                columns={wd=.95\linewidth},%手动设置栏宽为minipage栏宽的0.95倍
+                row{1,3,7,11}={abovesep+=12pt,},
+            }
+            {\large\textbf{审核校对}}                                                          \\
+            周大为                                                                             \\
+            {\large\textbf{内容改进}}                                                          \\
+            \uhref{https://xchb.sdsmu.edu.cn}{山东第二医科大学临床医学院}                      \\
+            \uhref{https://xchb.sdsmu.edu.cn}{山东第二医科大学党委宣传部}                      \\
+            \uhref{https://pd.qq.com/s/7mekdr5ve}{山东第二医科大学频道}                        \\
+            {\large\textbf{图片处理}}                                                          \\
+            \uhref{https://affinity.serif.com/zh-cn/designer}{Affinity® Designer}              \\
+            \uhref{https://www.gimp.org/}{GIMP}、%
+            \uhref{https://krita.org/zh-cn}{Krita}                                             \\
+            \uhref{https://www.adobe.com/cn/creativecloud/roc/business.html}{Adobe® Photoshop} \\
+            {\large\textbf{项目结构与内容}}\TblrNote{$\dag$}                                   \\
+            \uhref{https://zjuers.com/welcome}{%
+            浙江大学本科新生指引}                                                              \\
+            \uhref{https://github.com/SurviveSJTU/SurviveSJTUManual}{%
+            上海交通大学生存手册}                                                              \\
+            \uhref{https://github.com/SUSTech-Application/SUSTechapplication}{%
+            南方科技大学飞跃手册}                                                              \\
+            \uhref{https://github.com/SurviveSJTU/SJTU-Application}{%
+            上海交通大学飞跃手册}                                                              \\
+            \uhref{https://gitee.com/hanyaner/WITjsj}{%
+            武工大计院新生入学建议}                                                            \\
+        \end{tblr}
+    \end{minipage}%
+    \begin{minipage}[c][76ex][t]{.5\linewidth}
+        \centering
+        \begin{tblr}[
+                tall,
+                theme = {no-caption},
+            ]{
+                vline{1} = {.4pt},%同上，只是为了实际居中，理论上一条单线看不出来缺那么零点几毫米不居中
+                cells={c,m},
+                columns={wd=.95\linewidth},%略
+                row{1,4,10}={abovesep+=12pt},
+                row{Z}={abovesep+=34pt},
+            }
+            {\large\textbf{宣传发布}}                                                      \\
+            \uhref{https://pd.qq.com/s/7mekdr5ve}{山东第二医科大学频道}                    \\
+            \uhref{http://weixin.qq.com/r/mp/Vh0eBqPE8v6Nredl90hE}{闪医Spark Medicine}     \\
+            {\large\textbf{格式与排版}}                                                    \\
+            \uhref{https://ctan.org/pkg/latexindent}{latexindent.pl}                       \\
+            \uhref{https://github.com/James-Yu/LaTeX-Workshop}{LaTeX Workshop}             \\
+            \uhref{https://liam.page}{始终（Liam Huang）}                                  \\
+            \uhref{https://github.com/lvjr/tabularray}{tabularray}、%
+            \uhref{https://gitee.com/nwafu_nan/tabularray-doc-zh-cn}{tabularray-doc-zh-cn} \\
+            \uhref{https://github.com/latex3/hyperref}{hyperref}                           \\
+            {\large\textbf{疑难问题帮助}}                                                  \\
+            \uhref{https://github.com/CTeX-org/forum/issues}{GitHub CTeX Forum}            \\
+            \uhref{https://tex.stackexchange.com}{TeX StackExchange}                       \\
+            \uhref{https://www.latexstudio.net}{LaTeX工作室}                               \\
+            \large\textbf{\textcolor{red}{%
+            其他所有为本指南、地图提供建议与改进意见的同学、教师等}}                       \\
+        \end{tblr}
+    \end{minipage}
+
+    \begin{tblr}[
+            tall,
+            theme = {no-caption},
+        ]{
+            cells={c,m},
+            cell{3}{1} = {c=3}{},
+            column{2} = {40pt},
+        }
+        {\large\colored{22}{120}{255}{\textbf{支付宝}}}           &  & %
+        {\large\colored{5}{192}{95}{\textbf{微信}}}                    \\
+        \includegraphics[height=4cm]{resources/pay/Ali_pay.png}   &  & %
+        \includegraphics[height=4cm]{resources/pay/Wechat_pay.png}     \\
+        \colored{255}{20}{147}{感觉有帮助？请我喝杯咖啡（〃∀〃）} &  &
+    \end{tblr}
+\end{table}
