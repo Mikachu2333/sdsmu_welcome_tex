@@ -33,6 +33,7 @@
 
 # diff
 *.diff
+epilogue.tex
 
 # pdf
 main.pdf
