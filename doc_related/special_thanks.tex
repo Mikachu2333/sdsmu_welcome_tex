@@ -13,15 +13,17 @@
                 theme = {no-caption},
                 note{$\dag$} = {本栏内所有资料均已获编委（主编）授权。},
             ]{
-                vline{2} = {.4pt},%手动设置中间线当作隔断，线需稍宽才能让左右两栏的边线重叠看不出来
+                %vlines,hlines, % draft模式时打开看看排版
+                vline{2} = {1pt},%手动设置中间线当作隔断
                 cells={c,m},
                 columns={wd=.95\linewidth},%手动设置栏宽为minipage栏宽的0.95倍
-                row{1,3,7,11}={abovesep+=12pt,},
+                row{1,3,8,12}={abovesep+=12pt,},
             }
             {\large\textbf{审核校对}}                                                          \\
             周大为                                                                             \\
-            {\large\textbf{内容改进}}                                                          \\
+            {\large\textbf{内容改进与支持}}                                                    \\
             \uhref{https://xchb.sdsmu.edu.cn}{山东第二医科大学临床医学院}                      \\
+            \uhref{https://kfyxy.sdsmu.edu.cn}{山东第二医科大学康复医学院}                     \\
             \uhref{https://xchb.sdsmu.edu.cn}{山东第二医科大学党委宣传部}                      \\
             \uhref{https://pd.qq.com/s/7mekdr5ve}{山东第二医科大学频道}                        \\
             {\large\textbf{图片处理}}                                                          \\
@@ -48,7 +50,7 @@
                 tall,
                 theme = {no-caption},
             ]{
-                vline{1} = {.4pt},%同上，只是为了实际居中，理论上一条单线看不出来缺那么零点几毫米不居中
+                %vlines,hlines, % draft模式时打开看看排版
                 cells={c,m},
                 columns={wd=.95\linewidth},%略
                 row{1,4,10}={abovesep+=12pt},
