@@ -20,6 +20,7 @@
 *.synctex*
 *.toc
 *.xdv
+*.html
 
 *.txt
 *.csv
@@ -46,3 +47,4 @@ main.pdf
 *.code-workspace
 *.Zone.Identifier
 build/**
+
